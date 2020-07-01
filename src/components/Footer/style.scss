@@ -1,0 +1,169 @@
+.footer__wrap {
+  width: 100%;
+  background: url("/Images/bgr-footer.jpg") center !important;
+  background-size: cover;
+  .fw__content {
+    max-width: 1648px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 56px 0px 40px 0px;
+    // background: #e4e4e4;
+    .fwcd__detail {
+      width: 100%;
+      display: flex;
+      padding-bottom: 40px;
+      justify-content: space-between;
+      border-bottom: 2px solid #fff;
+      > div {
+        display: flex;
+        flex-direction: column;
+      }
+      .fwcd__block1 {
+        max-width: 16.5rem;
+        .fwcdb1__logo {
+          > img {
+          }
+          > span {
+            font-family: NunitoSansSemiBold;
+            font-size: 16px;
+            line-height: 21px;
+            color: #ffffff;
+          }
+        }
+        .fwcdb1__image {
+          margin-top: 54px;
+        }
+        .fwcdb1__icon {
+          margin-top: 35px;
+        }
+      }
+      .fwcd__block2 {
+        max-width: 42.5rem;
+        justify-content: space-between;
+        .fwcdb2__intro {
+          font-family: NunitoSansRegular;
+          font-size: 18px;
+          line-height: 28px;
+          color: #ffffff;
+          text-align: left;
+        }
+      }
+      .fwcd__block3 {
+        // max-width: 25rem;
+        width: 25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        color: #ffffff;
+        .fwcdb3__item1 {
+          .item1__title {
+            font-family: NunitoSansBold;
+            font-size: 21px;
+            line-height: 28px;
+          }
+          .item1__sub {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin-top: 20px;
+            padding: 0 35px;
+            > span {
+              display: flex;
+              align-items: center;
+              font-family: NunitoSansRegular;
+              font-size: 18px;
+              line-height: 24px;
+              margin-top: 16px;
+              &:nth-last-child(3) {
+                margin-top: 0;
+              }
+              &:before {
+                content: "";
+                position: absolute;
+                height: 8px;
+                width: 8px;
+                left: 11px;
+                background-color: #ffffff;
+                border-radius: 50%;
+                display: inline-block;
+              }
+            }
+          }
+        }
+        .fwcdb3__item2 {
+          margin-top: 32px;
+          .item2__title {
+            font-family: NunitoSansBold;
+            font-size: 21px;
+            line-height: 28px;
+          }
+          .item2__sub {
+            margin-top: 20px;
+            > div {
+              display: flex;
+              align-items: center;
+              margin-top: 20px;
+              > img {
+                width: 18px;
+                background: #000;
+                padding: 6px;
+                border-radius: 50%;
+                border: 1px solid #ffffff;
+              }
+              > span {
+                padding-left: 16px;
+                font-family: NunitoSansRegular;
+                font-size: 18px;
+                line-height: 24px;
+              }
+            }
+          }
+        }
+        .fwcdb3__item3 {
+          margin-top: 32px;
+          .item3__title {
+            font-family: NunitoSansBold;
+            font-size: 21px;
+            line-height: 28px;
+          }
+          .item3__content {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 20px;
+            > img {
+              padding-right: 24px;
+            }
+            .item3c__span {
+              > div {
+                display: flex;
+                &:nth-last-child(1) {
+                  margin-top: 15px;
+                }
+                > img {
+                  padding-right: 12px;
+                }
+                > span {
+                  font-family: NunitoSansRegular;
+                  font-size: 18px;
+                  line-height: 25px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .fwcd__copyright {
+      margin-top: 20px;
+      text-align: center;
+      > span {
+        font-family: NunitoSansSemiBold;
+        font-size: 21px;
+        line-height: 28px;
+        color: #ffffff;
+      }
+    }
+  }
+}

@@ -1,0 +1,298 @@
+.flashsale__wrap {
+  width: 100%;
+  height: 496px;
+  background: #ffffff;
+  .fsw__header {
+    padding: 24px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    .fswh__left {
+      display: flex;
+      justify-content: space-between;
+      .fswhl__title {
+        font-family: NunitoSansBold;
+        font-size: 24px;
+        line-height: 33px;
+        color: #000000;
+        > img {
+          padding-right: 30px;
+        }
+      }
+      .fswhl__time {
+        display: flex;
+        justify-content: space-between;
+        .fswhlt__box {
+          margin-right: 16px;
+          > span {
+            padding: 7px;
+            font-family: NunitoSansRegular;
+            font-size: 21px;
+            line-height: 21px;
+            background: #000;
+            color: #fff;
+          }
+        }
+      }
+    }
+    .fswh_right {
+      > span {
+        cursor: pointer;
+        font-family: NunitoSansRegular;
+        font-size: 16px;
+        line-height: 21px;
+        color: #c73030;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .slick-slider {
+    border-top: 1px solid #e4e4e4;
+    .slick-next {
+      display: inline-block;
+      padding: 6px;
+      right: -8px;
+      background: #fff;
+      color: #fff;
+      box-shadow: 0px 3px 6px #00000029;
+      border-radius: 50%;
+      &:before {
+        display: none !important;
+      }
+    }
+    .slick-prev {
+      &:before {
+        display: none !important;
+      }
+    }
+    .slick-list {
+      .slick-track {
+        .slick-slide {
+          width: 249px !important;
+          padding: 0 12px;
+          > div {
+            // &:hover ~ .fsws__item{
+            //   opacity: 0.5;
+            // }
+            .fsws__item {
+              position: relative;
+              padding: 16px;
+              > img {
+                // max-width: 248px;
+                width: 100%;
+              }
+              .fswsi_label {
+                position: absolute;
+                // top: 0;
+                // left: 0;
+              }
+              .fswsi_discount {
+                position: absolute;
+                display: inline-block;
+                padding: 12px;
+                top: 30px;
+                right: 30px;
+                background: #b40009;
+                border-radius: 50%;
+                box-shadow: 0px 3px 6px #00000029;
+                > span {
+                  font-family: NunitoSansRegular;
+                  font-size: 16px;
+                  line-height: 21px;
+                  color: #ffffff;
+                }
+              }
+              .fswsi__title {
+                font-family: NunitoSansRegular;
+                font-size: 16px;
+                line-height: 24px;
+                color: #000000;
+                text-align: left;
+                margin-top: 8px;
+              }
+              .fswsi__price {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                margin-top: 8px;
+                > span {
+                  &:nth-last-child(1) {
+                    font-family: NunitoSansRegular;
+                    font-size: 18px;
+                    line-height: 24px;
+                    text-decoration: line-through;
+                    color: #000000;
+                  }
+                  &:nth-last-child(2) {
+                    font-family: NunitoSansBold;
+                    font-size: 24px;
+                    line-height: 32px;
+                    color: #c73030;
+                    padding-right: 7px;
+                  }
+                }
+              }
+              .fswsi__countdown {
+                width: 100%;
+                position: relative;
+                margin-top: 15px;
+                padding: 2px 0;
+                display: flex;
+                justify-content: center;
+                border-radius: 10px;
+                background: #cfcfcf;
+                overflow: hidden;
+                .countdown_bar {
+                  content: "";
+                  position: absolute;
+                  padding: 2px 0;
+                  height: 20px;
+                  top: 0;
+                  left: 0;
+                  background-color: #c73030;
+                  border-radius: 10px 0px 0px 10px;
+                }
+                > span {
+                  font-family: NunitoSansRegular;
+                  font-size: 12px;
+                  line-height: 16px;
+                  color: #ffffff;
+                  z-index: 2;
+                }
+              }
+            }
+            .fsws__item:hover > div {
+              opacity: 0.5;
+              z-index: -1;
+              visibility: hidden;
+            }
+            .fsws__item:hover > img {
+              opacity: 0.5;
+              // z-index: -1;
+              // visibility: hidden;
+            }
+
+            .fsws__itemActive {
+              position: relative;
+              &:hover > .fswsi_label {
+                opacity: 1;
+                z-index: 3;
+                visibility: visible;
+              }
+              &:hover > .fswsi_discount {
+                opacity: 1;
+                z-index: 3;
+                visibility: visible;
+              }
+              &:hover > .fswsic__actived {
+                width: 90%;
+                opacity: 1;
+                z-index: 3;
+                visibility: visible;
+                &:before {
+                  // content: "";
+                  // background: url("/Images/product3.jpg") center no-repeat;
+                  // background-size: cover;
+                  // opacity: 0.7;
+                  // top: 0;
+                  // left: 0;
+                  // bottom: 0;
+                  // right: 0;
+                  // position: absolute;
+                  // z-index: -1;
+                }
+              }
+              .fswsic__actived {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                position: absolute;
+                opacity: 0;
+                visibility: hidden;
+                padding: 8px;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                transition: 0.2s;
+                background: transparent;
+                .fswsica__title {
+                  font-family: NunitoSansRegular;
+                  font-size: 16px;
+                  line-height: 24px;
+                  color: #000000;
+                }
+                .fswsica__btn {
+                  margin-top: 8px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  > div {
+                    > button {
+                      height: 32px;
+                    }
+                  }
+                  .fswsica__btnLike {
+                    > button {
+                      padding: 0 17px;
+                      background: #ffffff;
+                      box-shadow: 0px 3px 6px #00000029;
+                      border: 0.5px solid #c73030;
+                      border-radius: 22px;
+                      > a {
+                        > span {
+                          display: flex;
+                          align-items: center;
+                          >img{
+                            width: 19px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  .fswsica__btnCart {
+                    > button {
+                      padding: 0 17px;
+                      background: #ffffff;
+                      box-shadow: 0px 3px 6px #00000029;
+                      border: 0.5px solid #c73030;
+                      border-radius: 22px;
+                      > a {
+                        > span {
+                          display: flex;
+                          align-items: center;
+                          >img{
+                            width: 19px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  .fswsica__btnBuy {
+                    > button {
+                      padding: 0 30px;
+                      background: #c73030;
+                      box-shadow: 0px 3px 6px #00000029;
+                      border: 0.5px solid #c73030;
+                      border-radius: 22px;
+                      > a {
+                        text-decoration: none;
+                        > span {
+                          font-family: NunitoSansSemiBold;
+                          font-size: 14px;
+                          line-height: 19px;
+                          color: #ffffff;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

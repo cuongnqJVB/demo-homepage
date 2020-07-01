@@ -1,0 +1,24 @@
+import React, { Component } from "react";
+import { Route, Switch, BrowserRouter } from "react-router-dom";
+import Layout from "./hocs/Layout";
+import HomePage from "./pages/Home";
+import "./App.css";
+import "./scss/font.scss";
+
+class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <React.Fragment>
+          <Layout>
+            <Switch>
+              <Route path="/" component={HomePage} />
+            </Switch>
+          </Layout>
+        </React.Fragment>
+      </BrowserRouter>
+    );
+  }
+}
+
+export default App;

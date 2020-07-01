@@ -1,0 +1,39 @@
+.WrapCart {
+  .wc_button {
+    cursor: pointer;
+    padding: 11px 21px;
+    background: transparent;
+    outline: none;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    transition: all ease 0.3s;
+
+    .wcb_link {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      > img {
+        padding-right: 7px;
+      }
+      span {
+        transition: all ease 0.3s;
+        font-family: NunitoSansRegular;
+        font-size: 18px;
+        line-height: 24px;
+        display: inline-block;
+        color: #000000;
+        letter-spacing: -0.64px;
+        &:nth-last-child(2) {
+          padding-right: 6px;
+        }
+      }
+    }
+
+    &:hover {
+      background: #fff;
+      span {
+        color: #000000;
+      }
+    }
+  }
+}

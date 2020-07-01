@@ -1,0 +1,27 @@
+.header_Wrap {
+  .hw__header {
+    max-width: 1648px;
+    margin: 0 auto;
+    padding: 24px 0px;
+    display: flex;
+    justify-content: space-between;
+    .hw__search {
+      min-width: 720px;
+      //   min-height: 48px;
+      height: 45px;
+      padding: 0 5px;
+      background: #ffffff;
+      border-color: transparent;
+      outline: none;
+      box-shadow: 0px 3px 3px #0000001a;
+      border-radius: 5px;
+    }
+    .hwh_right{
+      display: flex;
+      justify-content: space-between;
+      >img{
+        padding-right: 32px;
+      }
+    }
+  }
+}
