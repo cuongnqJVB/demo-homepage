@@ -5,7 +5,7 @@ import DropdownItem from "./Dropdown";
 import styled from "styled-components";
 import "./style.scss";
 
-const Menu = () => {
+const Menu = (props) => {
   const data = [
     "TRANG ĐIỂM",
     "SON MÔI",
@@ -20,26 +20,25 @@ const Menu = () => {
     "SẢN PHẨM KHÁC",
   ];
   return (
-    <div className="menu__wrap">
+    <div className="coco-menu__wrapper">
       <DropdownMenu
         title="DANH MỤC SẢN PHẨM"
-        item={data.map((item, index) => {
-          return (
-            <div>
-              <span>{item}</span>
-              <img src="./Images/ic-arrowback.svg" />
-            </div>
-          );
-        })}
+        menuItem={data}
+        // get props from child component
+        setOverFlow={props.setOverFlow}
       />
-      <DropdownItem title="GIỚI THIỆU" item="Unset" />
-      <DropdownItem title="THƯƠNG HIỆU" item="Unset" />
-      <DropdownItem title="KHUYẾN MÃI" item="Unset" />
-      <DropdownItem title="XU HƯỚNG LÀM ĐẸP" item="Unset" />
-      <DropdownItem title="TRA CỨU ĐƠN HÀNG" item="Unset" />
-      <DropdownItem title="TẢI ỨNG DỤNG" item="Unset" />
-      <DropdownItem title="HỎI ĐÁP" item="Unset" />
-      <DropdownItem title="LIÊN HỆ" item="Unset" />
+      <DropdownItem title="GIỚI THIỆU" type="sale" />
+      <DropdownItem title="THƯƠNG HIỆU" type="sale" />
+      <DropdownItem
+        title="KHUYẾN MÃI"
+        // data={["Hot Deals", "Flash Deals", "Đang diễn ra"]}
+        type="sale"
+      />
+      <DropdownItem title="XU HƯỚNG LÀM ĐẸP" type="sale" />
+      <DropdownItem title="TRA CỨU ĐƠN HÀNG" type="tracking" />
+      <DropdownItem title="TẢI ỨNG DỤNG" type="app" />
+      <DropdownItem title="HỎI ĐÁP" type="sale" />
+      <DropdownItem title="LIÊN HỆ" type="sale" />
     </div>
   );
 };

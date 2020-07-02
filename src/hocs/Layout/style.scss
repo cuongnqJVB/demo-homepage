@@ -1,18 +1,25 @@
-.Layout_wrap {
+.coco-layout_wrap {
   width: 100%;
   margin: 0 auto;
   position: relative;
   background: #f3f3f3;
-  .lw_header_wrap {
+
+  .coco-layout-wrap-home_header {
     background: #000000;
   }
-  .layout_content {
+  .coco-layout-wrap_content {
     max-width: 1648px;
     margin: 0 auto;
     // background: #f3f3f3;
   }
-  .lw_scrollBox {
-    .lwsb__lstIconWrapper {
+
+  .layout_overflow {
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    opacity: 0.4;
+  }
+  .coco-layout-wrap_scrollbox {
+    .coco-layout-wrap-scrollbox_lstIconWrapper {
       display: flex;
       flex-direction: column;
       position: fixed;
@@ -22,6 +29,8 @@
       right: 4%;
       background: #ffffff;
       box-shadow: 0px 3px 6px #00000029;
+      -moz-box-shadow: 0px 3px 6px #00000029;
+      -webkit-box-shadow: 0px 3px 6px #00000029;
       border-radius: 24px;
       > img {
         margin-top: 16px;
@@ -30,26 +39,26 @@
         }
       }
     }
-    .lwsb__btnScroll {
+    .coco-layout-wrap-scrollbox_scrolltop {
       display: flex;
       align-items: center;
       position: fixed;
       z-index: 5;
       margin-top: 16px;
-      padding: 16px 20px;
+      // padding: 16px 20px;
+      // background: #ffffff;
       top: 70%;
       right: 4%;
-      background: #ffffff;
       box-shadow: 0px 3px 6px #00000029;
+      -moz-box-shadow: 0px 3px 6px #00000029;
+      -webkit-box-shadow: 0px 3px 6px #00000029;
       border-radius: 50%;
       transition: all ease 1s;
-      > img {
-        transform: rotate(-90deg);
-      }
+    
     }
   }
 
-  .lw__chatboxWrapper {
+  .coco-layout-wrap-scrollbox_chatbox {
     width: 12rem;
     display: flex;
     justify-content: space-between;
@@ -83,4 +92,7 @@
     display: none;
     transition: 0.3s;
   }
+}
+.layout_overflow {
+  background: #000000;
 }

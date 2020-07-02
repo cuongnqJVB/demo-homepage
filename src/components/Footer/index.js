@@ -4,31 +4,31 @@ import "./style.scss";
 
 const WrapFooter = styled.div`
   width: 100%;
-  background: #000000;
+  background: url("/Images/bgr-footer.jpg") center no-repeat;
+  background-size: cover;
 `;
 
 const Footer = () => {
   return (
-    <WrapFooter className="footer__wrap">
-      <div className="fw__content">
-        <div className="fwcd__detail">
-          <div className="fwcd__block1">
-            <div className="fwcdb1__logo">
-              <img src="" />
-              <span>B E A U T Y & C O S M E T I C</span>
+    <WrapFooter className="coco-footer_wrap">
+      <div className="coco-footer-wrap_content">
+        <div className="coco-footer-wrap-content_detail">
+          <div className="coco-fw-content_detail__block1">
+            <div className="coco-fwc-detail_block1__logo">
+              <img src="./Images/big-logo-coco.svg" />
             </div>
-            <div className="fwcdb1__image">
+            <div className="coco-fwc-detail_block1__image">
               <img src="./Images/bocongthuong_small.png" />
             </div>
-            <div className="fwcdb1__icon">
-              <img src="" />
-              <img src="" />
-              <img src="" />
-              <img src="" />
+            <div className="coco-fwc-detail_block1__icon">
+              <img src="./Images/ic-facebook.svg" />
+              <img src="./Images/ic-insta.svg" />
+              <img src="./Images/ic-youtube.svg" />
+              <img src="./Images/ic-google-plus.svg" />
             </div>
           </div>
-          <div className="fwcd__block2">
-            <div className="fwcdb2__intro">
+          <div className="coco-fw-content_detail__block2">
+            <div className="coco-fwc-detail_block2__textarea">
               COCO SHOP là hệ thống mỹ phẩm chính hãng và uy tín có quy mô lớn
               số 1 Việt Nam,đa dạng các loại mỹ phẩm đến từ các hãng nổi tiếng
               trên toàn thế giới,,,Đến với COCOSHOP các bạn có quyền được yên
@@ -37,22 +37,22 @@ const Footer = () => {
               ngừng cố gắng để xứng đáng là địa điểm mua săm tin cậy trong lòng
               các bạn trẻ
             </div>
-            <div className="fwcdb2__image">
-            <img src="./Images/Image 14.png" />
+            <div className="coco-fwc-detail_block2__image">
+              <img src="./Images/Image 14.png" />
             </div>
           </div>
-          <div className="fwcd__block3">
-            <div className="fwcdb3__item1">
-              <div className="item1__title">HỖ TRỢ KHÁCH HÀNG</div>
-              <div className="item1__sub">
+          <div className="coco-fw-content_detail__block3">
+            <div className="coco-fwc-detail_block3__item1">
+              <div className="coco-fwcd-block3_item1__title">HỖ TRỢ KHÁCH HÀNG</div>
+              <div className="coco-fwcd-block3_item1__subtitle">
                 <span>Hướng dẫn mua hàng...</span>
                 <span>Giải đáp thắc mắc</span>
                 <span>Chính sách đổi trả</span>
               </div>
             </div>
-            <div className="fwcdb3__item2">
-              <div className="item2__title">LIÊN HỆ VỚI CHÚNG TÔI</div>
-              <div className="item2__sub">
+            <div className="coco-fwc-detail_block3__item2">
+              <div className="coco-fwcd-block3_item2__title">LIÊN HỆ VỚI CHÚNG TÔI</div>
+              <div className="coco-fwcd-block3_item2__subtitle">
                 <div>
                   <img src="./Images/ic-phone.svg" />
                   <span>Điện thoại: +84-988888290</span>
@@ -67,11 +67,11 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="fwcdb3__item3">
-              <div className="item3__title">TẢI ỨNG DỤNG COCO SHOP</div>
-              <div className="item3__content">
+            <div className="coco-fwc-detail_block3__item3">
+              <div className="coco-fwcd-block3_item3__title">TẢI ỨNG DỤNG COCO SHOP</div>
+              <div className="coco-fwcd-block3_item3__content">
                 <img src="./Images/ic-qrcode.png" />
-                <div className="item3c__span">
+                <div className="coco-fwcd-block3-item3_content__span">
                   <div>
                     <img src="./Images/ic-appstore.svg" />
                     <span> App Store</span>
@@ -85,7 +85,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="fwcd__copyright">
+        <div className="coco-footer-wrap-content_detail__copyright">
           <span>
             © Bản quyền thuộc về Coco Shop - Chuỗi cửa hàng mỹ phẩm chính hãng
             làm đẹp.

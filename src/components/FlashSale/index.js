@@ -20,20 +20,15 @@ class FlashSale extends Component {
     const { activeItem } = this.state;
     const {
       data,
-      discountVal,
-      productTitle,
-      price,
-      priceStock,
       logoHeader,
       titleHeader,
       displayTimeBox,
-      countDown,
-      countDownWidth,
       item,
       marginTop,
       classComponent,
       btnExternal,
       setNextArrow,
+      type,
     } = this.props;
     const settings = {
       dots: false,
@@ -71,7 +66,7 @@ class FlashSale extends Component {
           </div>
         </div>
         <Slider {...settings}>
-          {data ? (
+          {data && type === "flashsale" ? (
             data.map((item, index) => {
               return (
                 <div className="fsws__item fsws__itemActive ">
@@ -85,7 +80,7 @@ class FlashSale extends Component {
                         className="fswsica__btnLike"
                       />
                       <Button
-                        text={<img src="./Images/ic-cart.svg" />}
+                        text={<img src="./Images/ic-cart-red.svg" />}
                         className="fswsica__btnCart"
                       />
                       <Button text="Mua ngay" className="fswsica__btnBuy" />
@@ -96,7 +91,8 @@ class FlashSale extends Component {
                   </div>
                   <img src="./Images/product3.jpg" />
                   <div className="fswsi_discount">
-                    <span>15%</span>
+                    <span>-15%</span>
+                    {/* <img src="/Images/ic-discount.svg" /> */}
                   </div>
                   <div className="fswsi__title">
                     Nước tẩy trang Eucerin dành cho mọi loại da
@@ -111,6 +107,20 @@ class FlashSale extends Component {
                       style={{ width: "26%" }}
                     ></div>
                     <span>Còn lại 12 ngày 13:27:17</span>
+                  </div>
+                </div>
+              );
+            })
+          ) : (
+            <div></div>
+          )}
+          {data && type === "brand" ? (
+            data.map((item, index) => {
+              return (
+                <div className="fslb__item">
+                  <img src="./Images/brand1.jpg" />
+                  <div className="fslbi__label">
+                    <span>CLINIQUE</span>
                   </div>
                 </div>
               );

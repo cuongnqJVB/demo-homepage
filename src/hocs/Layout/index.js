@@ -6,32 +6,34 @@ import "./style.scss";
 
 const Layout = ({ ...props }) => {
   const [chatbox, setChatbox] = useState(null);
+  let [overFlow, setOverFlow] = useState(null);
+  let [layoutOverlay, setLayoutOverlay] = useState(null);
   const { children } = props;
   const scrollTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
-    <div className="Layout_wrap">
-      <div className="lw_header_wrap">
+    <div className={`coco-layout_wrap ${overFlow}`}>
+      <div className="coco-layout-wrap-home_header">
         <Header />
-        <Menu />
+        <Menu setOverFlow={setOverFlow} />
       </div>
-      <div className="layout_content">{children}</div>
+      <div className={`coco-layout-wrap_content ${overFlow}`}>{children}</div>
       <Footer />
       {/* ScrollBox */}
-      <div className="lw_scrollBox">
-        <div className="lwsb__lstIconWrapper">
+      <div className={`coco-layout-wrap_scrollbox ${overFlow}`}>
+        <div className="coco-layout-wrap-scrollbox_lstIconWrapper">
           <img src="./Images/ic-fb-color.svg" />
           <img src="./Images/ic-youtube-color.svg" />
           <img src="./Images/ic-insta-color.svg" />
           <img src="./Images/ic-social-color.svg" />
         </div>
-        <div className="lwsb__btnScroll" onClick={scrollTop}>
-          <img src="./Images/ic-arrowback.svg" />
+        <div className="coco-layout-wrap-scrollbox_scrolltop" onClick={scrollTop}>
+          <img src="./Images/ic-btn-to-top.svg" />
         </div>
       </div>
       {/* ChatBox */}
-      <div className={`lw__chatboxWrapper ${chatbox}`}>
+      <div className={`coco-layout-wrap-scrollbox_chatbox ${chatbox} ${overFlow}`}>
         <div>
           <span> Chat với chúng tôi</span>
           <img src="./Images/ic-arrowtop.svg" />

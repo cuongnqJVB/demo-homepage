@@ -19,17 +19,17 @@ const WrapHeader = styled.div`
 
 const Header = () => {
   return (
-    <div className="header_Wrap">
+    <div className="coco-layout-wrap-main-dad_header">
       <TopHeader />
       <WrapHeader>
-        <div className="hw__header">
+        <div className="coco-layout-wrap-main-child_header">
           <LogoCoco />
           <SearchBox
-            classname_input="hw__search"
+            classname_input="coco-layout-wrap-main-child-header-search_field"
             placeholder="Tìm sản phẩm, thương hiệu bạn mong muốn..."
           />
           <Account />
-          <div className="hwh_right">
+          <div className="coco-layout-wrap-main-child-header-list_item">
             <img src="./Images/ic-like.svg" />
             <Cart text="Giỏ hàng" total="1" />
           </div>

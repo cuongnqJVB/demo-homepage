@@ -52,28 +52,36 @@ class HomePage extends Component {
             </div>
           </div>
         </div>
-        <FlashSale titleHeader="FLASH SALE" marginTop="32px" data={arr} />
+        <FlashSale
+          logoHeader="./Images/logo-flashsale.svg"
+          type="flashsale"
+          marginTop="32px"
+          data={arr}
+        />
         <FlashSale
           titleHeader="HOT TRENDING"
           displayTimeBox="none"
           marginTop="56px"
+          type="flashsale"
           data={arr}
         />
         <FlashSale
           titleHeader="THƯƠNG HIỆU NỔI BẬT"
           displayTimeBox="none"
           marginTop="56px"
+          type="brand"
           classComponent="fslist__brand"
-          item={arr.map((item, index) => {
-            return (
-              <div className="fslb__item">
-                <img src="./Images/brand1.jpg" />
-                <div className="fslbi__label">
-                  <span>CLINIQUE</span>
-                </div>
-              </div>
-            );
-          })}
+          data={arr2}
+          // item={arr.map((item, index) => {
+          //   return (
+          //     <div className="fslb__item">
+          //       <img src="./Images/brand1.jpg" />
+          //       <div className="fslbi__label">
+          //         <span>CLINIQUE</span>
+          //       </div>
+          //     </div>
+          //   );
+          // })}
         />
         {/* Poster */}
         <div className="hpl__poster">
