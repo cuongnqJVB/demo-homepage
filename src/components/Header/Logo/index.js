@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-
 import styled from 'styled-components';
 
 const Logo = styled.div`
   a{
-    display: inline-block;
-    // margin-left:35px;
-    
+    display: inline-block;    
     img{
       width: 88px;
     }
@@ -16,7 +13,7 @@ const Logo = styled.div`
 class LogoCoco extends Component {
   render() {
     return (
-      <Logo style={{ position: 'relative', zIndex: '99' }}>
+      <Logo style={{ position: 'relative', zIndex: '5' }}>
         <Link to='/'>
           <img src='./Images/logo_cocoshop.png' alt=""/>
         </Link>

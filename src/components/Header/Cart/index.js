@@ -9,23 +9,15 @@ class Cart extends Component {
     const { text, total, TextLink, className } = this.props;
     const Wrap = styled.div``;
     return (
-      // <Wrap className={`${styles.WrapCart} ${className}`}>
-      //   <button className={`${styles.wc_button}`}>
-      //     <Link className={styles.wcb_link} to={TextLink}>
-      //       <img src="./Images/ic-cart.svg" />
-      //       <span>{text}</span>
-      //     </Link>
-      //   </button>
-      // </Wrap>
-      <Wrap className={`WrapCart ${className}`}>
-      <button className="wc_button">
-        <Link className="wcb_link" to={TextLink}>
-          <img src="./Images/ic-cart.svg" />
-          <span>{text}</span>
-          <span>({total})</span>
-        </Link>
-      </button>
-    </Wrap>
+      <Wrap className={`cart-button-wrap ${className}`}>
+        <button className="cart-button-btn">
+          <Link className="button-btn_link" to={TextLink}>
+            <img src="./Images/ic-cart.svg" />
+            <span>{text}</span>
+            <span>({total})</span>
+          </Link>
+        </button>
+      </Wrap>
     );
   }
 }

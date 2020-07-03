@@ -54,7 +54,6 @@
       -webkit-box-shadow: 0px 3px 6px #00000029;
       border-radius: 50%;
       transition: all ease 1s;
-    
     }
   }
 
@@ -90,7 +89,7 @@
   .hiddenChatBox {
     // visibility: hidden;
     display: none;
-    transition: 0.3s;
+    transition: all ease 0.3s;
   }
 }
 .layout_overflow {

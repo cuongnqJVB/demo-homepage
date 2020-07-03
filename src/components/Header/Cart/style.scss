@@ -1,5 +1,5 @@
-.WrapCart {
-  .wc_button {
+.cart-button-wrap {
+  .cart-button-btn {
     cursor: pointer;
     padding: 11px 21px;
     background: transparent;
@@ -7,8 +7,7 @@
     border: 1px solid #000000;
     border-radius: 5px;
     transition: all ease 0.3s;
-
-    .wcb_link {
+    .button-btn_link {
       text-decoration: none;
       display: flex;
       align-items: center;

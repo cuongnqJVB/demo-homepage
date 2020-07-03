@@ -12,7 +12,7 @@ const Wrap = styled.div`
 class Account extends Component {
   render() {
     return (
-      <Wrap className="acc__wrap">
+      <Wrap className="account-wrap">
         <img src="./Images/ic-account.svg" />
         <div>
           <Link to="/">Đăng nhập / Đăng ký</Link>
