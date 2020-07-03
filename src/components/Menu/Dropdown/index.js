@@ -6,7 +6,6 @@ import "./style.scss";
 export default ({ title, data, width, padding, type, className, ...props }) => {
   const [dataDropdown, setDataDropdown] = useState([]);
   const renderDropdownSale = (type, data) => {
-    console.log(data);
     if (type === "sale") {
       return (
         <div class="coco-menu-dropdownd-x_wrap__list coco-mdx-wrap_list__sale">

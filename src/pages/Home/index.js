@@ -1,7 +1,9 @@
 import React, { Component } from "react";
-import ListArticle from "../../components/ListArticle";
+import ListArticle from "../../components/ListProductByCategories/ListArticle";
 import FlashSale from "../../components/FlashSale";
-import ListProductByCategories from "../../components/ListProductByCategories";
+import ListBrand from "../../components/ListProductByCategories/ListBrand";
+import ListProductVertical from "../../components/ListProductByCategories/ListProductVertical";
+import ListProductHorizontal from "../../components/ListProductByCategories/ListProductHorizontal";
 import "./style.scss";
 
 class HomePage extends Component {
@@ -52,54 +54,54 @@ class HomePage extends Component {
             </div>
           </div>
         </div>
-        <FlashSale
+        <ListProductHorizontal
           logoHeader="./Images/logo-flashsale.svg"
           type="flashsale"
           marginTop="32px"
           data={arr}
         />
-        <FlashSale
+        <ListProductHorizontal
           titleHeader="HOT TRENDING"
           displayTimeBox="none"
           marginTop="56px"
           type="flashsale"
           data={arr}
         />
-        <FlashSale
+        <ListBrand
           titleHeader="THƯƠNG HIỆU NỔI BẬT"
           displayTimeBox="none"
           marginTop="56px"
+          setSlidesToShow={5}
+          setSlidesToScroll={2}
           type="brand"
           classComponent="fslist__brand"
-          data={arr2}
-          // item={arr.map((item, index) => {
-          //   return (
-          //     <div className="fslb__item">
-          //       <img src="./Images/brand1.jpg" />
-          //       <div className="fslbi__label">
-          //         <span>CLINIQUE</span>
-          //       </div>
-          //     </div>
-          //   );
-          // })}
+          data={[
+            "CLINIQUE",
+            "CLINIQUE",
+            "CLINIQUE",
+            "CLINIQUE",
+            "CLINIQUE",
+            "CLINIQUE",
+            "CLINIQUE",
+          ]}
         />
         {/* Poster */}
         <div className="hpl__poster">
           <img src="./Images/Rectangle 20.jpg" />
           <img src="./Images/Rectangle 21.jpg" />
         </div>
-        <ListProductByCategories
-          cateTitle="TRANG ĐIỂM"
+        <ListProductVertical
+          categoriesTitle="TRANG ĐIỂM"
           posterImg="./Images/Rectangle 25.jpg"
-          categoriesType={1}
+          // mode="reverse"
           marginTop="72px"
           lstItem={arr2}
           lstTab={["Trang Điểm Mặt", "Trang Điểm Vùng Mắt", "Tẩy trang"]}
         />
-        <ListProductByCategories
-          cateTitle="SON MÔI"
+        <ListProductVertical
+          categoriesTitle="SON MÔI"
           posterImg="./Images/Rectangle 31.jpg"
-          categoriesType={2}
+          mode="reverse"
           marginTop="72px"
           lstItem={arr2}
           lstTab={[
@@ -109,8 +111,8 @@ class HomePage extends Component {
             "Mặt Nạ Môi",
           ]}
         />
-        <ListProductByCategories
-          cateTitle="CHĂM SÓC DA"
+        <ListProductVertical
+          categoriesTitle="CHĂM SÓC DA"
           posterImg="./Images/Rectangle 35.jpg"
           categoriesType={1}
           marginTop="72px"
@@ -123,10 +125,10 @@ class HomePage extends Component {
           <img src="./Images/Rectangle 27.jpg" />
           <img src="./Images/Rectangle 26.jpg" />
         </div>
-        <ListProductByCategories
-          cateTitle="Chăm sóc cơ thể"
+        <ListProductVertical
+          categoriesTitle="Chăm sóc cơ thể"
           posterImg="./Images/Rectangle 44.jpg"
-          categoriesType={2}
+          mode="reverse"
           marginTop="72px"
           lstItem={arr2}
           lstTab={[
@@ -136,8 +138,8 @@ class HomePage extends Component {
             "KHỬ MÙI CƠ THỂ",
           ]}
         />
-        <ListProductByCategories
-          cateTitle="CHĂM SÓC TÓC"
+        <ListProductVertical
+          categoriesTitle="CHĂM SÓC TÓC"
           posterImg="./Images/Rectangle 43.jpg"
           categoriesType={1}
           marginTop="72px"
@@ -150,10 +152,10 @@ class HomePage extends Component {
             "Thuốc Nhuộm",
           ]}
         />
-        <ListProductByCategories
-          cateTitle="NƯỚC HOA"
+        <ListProductVertical
+          categoriesTitle="NƯỚC HOA"
           posterImg="./Images/Rectangle 47.jpg"
-          categoriesType={2}
+          mode="reverse"
           marginTop="72px"
           lstItem={arr2}
           lstTab={[

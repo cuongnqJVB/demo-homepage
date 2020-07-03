@@ -28,14 +28,16 @@ class FlashSale extends Component {
       classComponent,
       btnExternal,
       setNextArrow,
+      setSlidesToShow,
+      setSlidesToScroll,
       type,
     } = this.props;
     const settings = {
       dots: false,
       infinite: true,
       speed: 500,
-      slidesToShow: 6,
-      slidesToScroll: 3,
+      slidesToShow: setSlidesToShow ? setSlidesToShow : 6,
+      slidesToScroll: setSlidesToScroll ? setSlidesToScroll : 3,
       nextArrow: <BtnNextArrow className="btn__next" />,
     };
     return (
@@ -117,10 +119,10 @@ class FlashSale extends Component {
           {data && type === "brand" ? (
             data.map((item, index) => {
               return (
-                <div className="fslb__item">
+                <div className="fslb__item" key={index}>
                   <img src="./Images/brand1.jpg" />
                   <div className="fslbi__label">
-                    <span>CLINIQUE</span>
+                    <span>{item}</span>
                   </div>
                 </div>
               );

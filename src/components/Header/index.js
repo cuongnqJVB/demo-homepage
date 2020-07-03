@@ -5,13 +5,8 @@ import SearchBox from "../Search";
 import Account from "./Account";
 import Cart from "./Cart";
 import TopHeader from "./TopHeader";
-import Menu from "../../components/Menu";
 import "./style.scss";
 
-const WrapMenu = styled.div`
-  width: 100%;
-  background: #000000;
-`;
 const WrapHeader = styled.div`
   width: 100%;
   background: #f3f3f3;
@@ -35,9 +30,6 @@ const Header = () => {
           </div>
         </div>
       </WrapHeader>
-      {/* <WrapMenu>
-        <Menu />
-      </WrapMenu> */}
     </div>
   );
 };
