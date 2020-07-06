@@ -7,10 +7,10 @@
     background: #272727;
   }
   &:hover .coco-menu-dropdown_detail__content {
-    opacity: 1;
+    opacity: 1 !important;
     z-index: 5;
     display: block;
-    visibility: visible;
+    visibility: visible !important;
   }
 
   .coco-menu-dropdown_detail {
@@ -20,6 +20,7 @@
     color: #fff;
     > span {
       padding: 0 8px;
+      line-height: 20px;
     }
     .coco-menu-dropdown_detail__hamburger {
       display: block;

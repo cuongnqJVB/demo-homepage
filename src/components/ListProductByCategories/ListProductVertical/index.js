@@ -69,16 +69,17 @@ class ListProductVertical extends Component {
             <div className="right_tab__item">XEM THÊM</div>
           </div>
           <div className={`vertical--right_content `}>
-            <Slider {...settings}>
+            <Slider
+              {...settings}
+              className={`${
+                tabActive === 0
+                  ? "right-content_item__active"
+                  : "right-content_item__inactive"
+              }`}
+            >
               {lstItem.map((item, index) => {
                 return (
-                  <div
-                    className={`right-content_item ${
-                      tabActive === 0
-                        ? "right-content_item__active"
-                        : "right-content_item__inactive"
-                    }`}
-                  >
+                  <div className="right-content_item">
                     <div className="right-content_item__hovered">
                       <div className="item-hovered_title">
                         Nước tẩy trang Eucerin dành cho mọi loại da
@@ -107,10 +108,8 @@ class ListProductVertical extends Component {
                       <span>235.500 đ</span>
                     </div>
                   </div>
-                  
                 );
               })}
-              
             </Slider>
           </div>
         </div>

@@ -5,7 +5,7 @@ import Footer from "../../components/Footer";
 import "./style.scss";
 
 const Layout = ({ ...props }) => {
-  const [chatbox, setChatbox] = useState(null);
+  let [chatbox, setChatbox] = useState(null);
   let [overFlow, setOverFlow] = useState(null);
   let [layoutOverlay, setLayoutOverlay] = useState(null);
   const { children } = props;

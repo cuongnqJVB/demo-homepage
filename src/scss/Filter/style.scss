@@ -1,0 +1,49 @@
+.coco-filter-wrap {
+  .coco-filter--button {
+    display: flex;
+    align-items: center;
+    > img {
+      padding-right: 8px;
+    }
+    > span {
+      font-family: NunitoSansBold;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: left;
+      color: #000000;
+      text-transform: uppercase;
+    }
+  }
+  .coco-filter--list_item {
+    .filter--list_item__header {
+      margin-top: 23px;
+      font-family: NunitoSansBold;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: left;
+      color: #000000;
+      text-transform: uppercase;
+    }
+    .filter--list_item__expand {
+      .item_expand__root {
+        margin-top: 15px;
+        font-family: NunitoSansSemiBold;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: left;
+        color: #c73030;
+      }
+      .item_expand__child {
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+        padding-left: 20px;
+        font-family: NunitoSansRegular;
+        font-size: 18px;
+        line-height: 36px;
+        text-align: left;
+        color: #000000;
+      }
+    }
+  }
+}

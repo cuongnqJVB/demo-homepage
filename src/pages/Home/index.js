@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import ListArticle from "../../components/ListProductByCategories/ListArticle";
-import FlashSale from "../../components/FlashSale";
 import ListBrand from "../../components/ListProductByCategories/ListBrand";
 import ListProductVertical from "../../components/ListProductByCategories/ListProductVertical";
 import ListProductHorizontal from "../../components/ListProductByCategories/ListProductHorizontal";
@@ -8,47 +7,18 @@ import "./style.scss";
 
 class HomePage extends Component {
   render() {
-    const arr = [
-      "15%",
-      "./Images/product1.jpg",
-      "Nước tẩy trang Eucerin dành cho mọi loại da",
-      "211.500 đ",
-      "235.500 đ",
-      "26%",
-      "Còn lại 12 ngày 13:27:17",
-    ];
     const arr2 = ["1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1"];
     const arr3 = ["1", "1", "1", "1"];
-    const data = {
-      product1: {
-        discountVal: ["15%"],
-        productImage: ["./Images/product1.jpg"],
-        productTitle: "Nước tẩy trang Eucerin dành cho mọi loại da",
-        price: "211.500 đ",
-        priceStock: "235.500 đ",
-        countDownWidth: "26%",
-        countDown: "Còn lại 12 ngày 13:27:17",
-      },
-      product2: {
-        discountVal: ["15%"],
-        productImage: ["./Images/product1.jpg"],
-        productTitle: "Nước tẩy trang Eucerin dành cho mọi loại da",
-        price: "211.500 đ",
-        priceStock: "235.500 đ",
-        countDownWidth: "26%",
-        countDown: "Còn lại 12 ngày 13:27:17",
-      },
-    };
 
     return (
-      <div className="Homepage__Layout">
-        <div className="hpl__content1">
-          <div className="hplc_left"></div>
-          <div className="hplc_right">
-            <div className="hwb___item1">
+      <div className="coco-home-wrap">
+        <div className="coco-home-content1">
+          <div className="home-content1--left"></div>
+          <div className="home-content1--right">
+            <div className="home-content1--right_item1">
               <img src="./Images/Rectangle 5.jpg" />
             </div>
-            <div className="hwb___item2">
+            <div className="home-content1--right_item2">
               <img src="./Images/Rectangle 5114.jpg" />
               <img src="./Images/Rectangle 5113.jpg" />
             </div>
@@ -58,14 +28,14 @@ class HomePage extends Component {
           logoHeader="./Images/logo-flashsale.svg"
           type="flashsale"
           marginTop="32px"
-          data={arr}
+          data={arr2}
         />
         <ListProductHorizontal
           titleHeader="HOT TRENDING"
           displayTimeBox="none"
           marginTop="56px"
           type="flashsale"
-          data={arr}
+          data={arr2}
         />
         <ListBrand
           titleHeader="THƯƠNG HIỆU NỔI BẬT"
@@ -93,7 +63,6 @@ class HomePage extends Component {
         <ListProductVertical
           categoriesTitle="TRANG ĐIỂM"
           posterImg="./Images/Rectangle 25.jpg"
-          // mode="reverse"
           marginTop="72px"
           lstItem={arr2}
           lstTab={["Trang Điểm Mặt", "Trang Điểm Vùng Mắt", "Tẩy trang"]}
