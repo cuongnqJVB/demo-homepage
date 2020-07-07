@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import DropdownMenu from "./DropdownMenu";
 import DropdownItem from "./Dropdown";
@@ -6,6 +6,7 @@ import styled from "styled-components";
 import "./style.scss";
 
 const Menu = (props) => {
+  let [activeDropdown, setActiveDropdown] = useState(null);
   const data = [
     "TRANG ĐIỂM",
     "SON MÔI",
@@ -19,11 +20,13 @@ const Menu = (props) => {
     "THỰC PHẨM CHỨC NĂNG",
     "SẢN PHẨM KHÁC",
   ];
+
   return (
     <div className="coco-menu__wrapper">
       <DropdownMenu
         title="DANH MỤC SẢN PHẨM"
         menuItem={data}
+        className={activeDropdown}
         // get props from child component
         setOverFlow={props.setOverFlow}
       />

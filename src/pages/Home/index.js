@@ -28,12 +28,14 @@ class HomePage extends Component {
           logoHeader="./Images/logo-flashsale.svg"
           type="flashsale"
           marginTop="32px"
+          classComponent="home-list-product-horizontal"
           data={arr2}
         />
         <ListProductHorizontal
           titleHeader="HOT TRENDING"
           displayTimeBox="none"
           marginTop="56px"
+          classComponent="home-list-product-horizontal"
           type="flashsale"
           data={arr2}
         />

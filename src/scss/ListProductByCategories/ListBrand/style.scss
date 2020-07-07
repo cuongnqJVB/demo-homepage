@@ -74,13 +74,14 @@
       }
     }
     .list-brand-product {
+      width: 253px !important;
       margin-top: 32px;
       > img {
         width: 100%;
         border-radius: 5px 5px 0px 0px;
       }
       .list-brand-product--label {
-        padding: 17px 0;
+        padding: 15px 0;
         text-align: center;
         > span {
           font-family: NunitoSansBold;
@@ -93,8 +94,9 @@
     .slick-list {
       .slick-track {
         .slick-slide {
-          width: 249px !important;
-          padding: 0 13px;
+          width: 253px !important;
+          // padding: 0 13px;
+          margin: 0 11px;
         }
       }
     }

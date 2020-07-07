@@ -12,6 +12,7 @@ const Layout = ({ ...props }) => {
   const scrollTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
   return (
     <div className={`coco-layout_wrap ${overFlow}`}>
       <div className="coco-layout-wrap-home_header">

@@ -25,7 +25,9 @@ const Filter = (props) => {
               </span>
             </div>
             <div className="filter--list_item__expand">
-              <div className="item_expand__root">Trang điểm mặt</div>
+              <div className="item_expand__root  item_expand__active">
+                Trang điểm mặt
+              </div>
               <div className="item_expand__child">
                 <span>Kem Nền</span>
                 <span>Kem Lót</span>
@@ -33,6 +35,8 @@ const Filter = (props) => {
                 <span>Phấn Má Hồng</span>
                 <span>Phấn Nước Cushion</span>
                 <span>Phấn Phủ</span>
+                <span>Tạo Khối - Highlighter</span>
+                <span>Tạo Khối - Highlighter</span>
                 <span>Tạo Khối - Highlighter</span>
               </div>
               <div className="item_expand__root">Trang Điểm Môi</div>

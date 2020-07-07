@@ -23,6 +23,7 @@ class ListProductHorizontal extends Component {
       marginTop,
       classComponent,
       btnExternal,
+      setLabel,
       setWidthCountdown,
       setSlidesToShow,
       setSlidesToScroll,
@@ -33,7 +34,7 @@ class ListProductHorizontal extends Component {
       infinite: true,
       speed: 500,
       slidesToShow: setSlidesToShow ? setSlidesToShow : 6,
-      slidesToScroll: setSlidesToScroll ? setSlidesToScroll : 3,
+      slidesToScroll: setSlidesToScroll ? setSlidesToScroll : 6,
       nextArrow: <BtnNextArrow />,
     };
     return (
@@ -93,7 +94,7 @@ class ListProductHorizontal extends Component {
                       />
                     </div>
                   </div>
-                  <div className="list-product-horizontal--label">
+                  <div className="list-product-horizontal--label" style={{display: setLabel}}>
                     <img src="./Images/ic-new.svg" />
                   </div>
                   <img src="./Images/product3.jpg" />

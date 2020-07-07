@@ -67,12 +67,14 @@
         .slick-list {
           .slick-track {
             .slick-slide {
-              width: 250px !important;
-              padding: 0 12px;
+              width: 264px !important;
+              margin: 0 5px;
               > div {
+                width: 100%;
                 .right-content_item {
-                  margin-top: 17px;
-                  width: 100% !important;
+                  margin-top: 9px;
+                  width: 264px !important;
+                  padding: 8px 16px;
                 }
               }
             }
@@ -211,14 +213,12 @@
           color: #000000;
           text-align: left;
           margin-top: 8px;
-          padding: 0 16px;
         }
         .right-content_item__price {
           display: flex;
           align-items: center;
           justify-content: flex-start;
           margin-top: 8px;
-          padding: 0 16px;
           > span {
             &:nth-last-child(1) {
               font-family: NunitoSansRegular;

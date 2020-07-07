@@ -1,6 +1,24 @@
 import React from "react";
+import Form from "react-bootstrap/Form";
 import styled from "styled-components";
 import "./style.scss";
+
+const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
+  <a
+    href=""
+    ref={ref}
+    onClick={(e) => {
+      e.preventDefault();
+      onClick(e);
+    }}
+  >
+    {children}
+    <img
+      src="./Images/ic-arrowtop.svg"
+      style={{ transform: "rotate(-180deg)" }}
+    />
+  </a>
+));
 
 export default ({
   name,
@@ -13,9 +31,9 @@ export default ({
 }) => {
   return (
     <div className={`coco-selectbox-wrap ${class_selectbox}`}>
-      <select style={{ width: "100%", height: "100%" }}>
-        <option value={option}>{option}</option>
-      </select>
+      <Form.Control as="select">
+        <option>{option}</option>
+      </Form.Control>
     </div>
   );
 };

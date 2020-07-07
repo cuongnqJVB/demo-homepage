@@ -81,15 +81,23 @@
     }
     .slick-list {
       .slick-track {
+        transform: translate3d(-1665px, 0px, 0px);
         .slick-slide {
-          width: 249px !important;
-          padding: 0 13px;
+          width: 264px !important;
+          // padding: 0 6px;
+          margin: 0 6px;
+          // margin-right: 13px;
           .list-product-horizontal-product {
             position: relative;
-            padding: 16px 0px;
+            width: 264px !important;
+            // padding: 16px 16px;
+            padding: 8px 16px 16px 16px;
             > img {
               // max-width: 248px;
               width: 100%;
+              // width: 248px;
+              min-height: 264px;
+              // padding: 8px;
             }
             .list-product-horizontal--label {
               position: absolute;
@@ -144,9 +152,9 @@
               }
             }
             .list-product-horizontal--countdown {
-              width: 100%;
+              // width: 100%;
               position: relative;
-              margin-top: 15px;
+              margin-top: 13px;
               padding: 2px 0;
               display: flex;
               justify-content: center;
@@ -221,7 +229,8 @@
               position: absolute;
               opacity: 0;
               visibility: hidden;
-              padding: 8px 0;
+              // padding: 8px 0;
+              padding: 8px 16px 16px 16px;
               top: 0;
               left: 0;
               bottom: 0;

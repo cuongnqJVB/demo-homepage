@@ -1,15 +1,22 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "../../../scss/BreadCrumb/style.scss";
+import "../../scss/BreadCrumb/style.scss";
 
 class BreadCrumb extends Component {
   render() {
-    const { firstUrl, secondUrl, firstRouter, secondRouter } = this.props;
+    const {
+      firstUrl,
+      secondUrl,
+      firstRouter,
+      secondRouter,
+      marginTop,
+    } = this.props;
     if (secondUrl) {
       return (
-        <div className="coco-breadcrumb-wrap">
+        <div className="coco-breadcrumb-wrap" style={{ marginTop: marginTop }}>
           <Link to="/" className="coco-breadcrumb-home">
             <img src="/Images/ic-home20px.svg" alt="" />
+            <span>Trang chủ</span>
           </Link>
           <a href={firstRouter} className="breadcrumb-home--first">
             {firstUrl}
@@ -21,9 +28,10 @@ class BreadCrumb extends Component {
       );
     } else {
       return (
-        <div className="breadcrumb_component">
+        <div className="breadcrumb_component" style={{ marginTop: marginTop }}>
           <Link to="/" className="coco-breadcrumb-home">
             <img src="/Images/ic-home20px.svg" alt="" />
+            <span>Trang chủ</span>
           </Link>
           <a href={firstRouter} className="breadcrumb-home--first">
             {firstUrl}
