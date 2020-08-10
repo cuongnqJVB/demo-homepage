@@ -3,14 +3,14 @@ import styled from "styled-components";
 import "./style.scss";
 
 const SanHead = styled.div`
-  font-family: NunitoSansRegular;
-  font-size: 16px;
-  line-height: 21px;
+  // font-family: NunitoSansRegular;
+  // font-size: 15px;
+  // line-height: 20px;
 `;
 
 export default ({ menuItem, title, width, padding, className, ...props }) => {
   return (
-    <SanHead className={`coco-menu_dropdown ${className}`}>
+    <div className={`coco-menu_dropdown ${className} ${props.setActiveMenu}`}>
       <div class="coco-menu-dropdown_detail">
         <div className="coco-menu-dropdown_detail__hamburger">
           <div class="line"></div>
@@ -120,6 +120,6 @@ export default ({ menuItem, title, width, padding, className, ...props }) => {
           )}
         </div>
       </div>
-    </SanHead>
+    </div>
   );
 };

@@ -51,6 +51,12 @@
             color: #ffffff;
           }
         }
+        &:focus {
+          background: #fff;
+          span {
+            color: #000000;
+          }
+        }
         &:hover {
           background: #fff;
           span {

@@ -1,12 +1,14 @@
 .product-component-wrap {
   max-width: 264px;
-  padding: 0 13px;
+  padding: 8px 16px;
+  margin-right: 9px;
   .product-component-item {
     position: relative;
-    padding: 16px 0px;
+    // padding: 16px 0px;
     > img {
       // max-width: 248px;
       width: 100%;
+      min-height: 264px;
     }
     .product-component-item--label {
       position: absolute;

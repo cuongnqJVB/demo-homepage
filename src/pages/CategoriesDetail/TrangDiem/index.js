@@ -20,7 +20,13 @@ const TrangDiem = () => {
 
   return (
     <div className="coco-trangdiem-wrap">
-      <BreadCrumb marginTop="13px" firstUrl="SON MÔI" secondUrl="Son Dưỡng" />
+      <BreadCrumb
+        marginTop="13px"
+        firstUrl="SON MÔI"
+        firstRouter="#"
+        secondUrl="Son Dưỡng"
+        secondRouter="#"
+      />
       <div className="coco-trangdiem-body">
         <div className="trangdiem-body--left">
           <Filter marginTop="32px" data={["1", "2", "3"]} />

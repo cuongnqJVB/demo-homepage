@@ -31,14 +31,19 @@ const ListCategoriesDetail = (props) => {
         <div className="coco-list-categories--navbar">
           <div className="categories--navbar_left">
             <span>Sắp xếp theo</span>
-            <Button text="Nổi bật" className="navbar_left__button" />
-            <Button text="Bán chạy" className="navbar_left__button" />
+            <button className="navbar_left__button">Nổi bật</button>
+            <button className="navbar_left__button">Bán chạy</button>
+            <button className="navbar_left__button">Hàng mới</button>
+            <button className="navbar_left__button">Khuyến mại</button>
+            <button className="navbar_left__button">Tên sản phẩm</button>
+            {/* <Button text="Nổi bật" className="navbar_left__button" /> */}
+            {/* <Button text="Bán chạy" className="navbar_left__button" />
             <Button text="Hàng mới" className="navbar_left__button" />
             <Button text="Khuyến mại" className="navbar_left__button" />
-            <Button text="Tên sản phẩm" className="navbar_left__button" />
+            <Button text="Tên sản phẩm" className="navbar_left__button" /> */}
             <SelectBox
               option="Giá sản phẩm"
-              class_selectbox="navbar_left__button"
+              class_selectbox="navbar_left__selectbox"
             />
           </div>
           <div className="categories--navbar_right">

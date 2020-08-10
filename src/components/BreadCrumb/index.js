@@ -28,7 +28,7 @@ class BreadCrumb extends Component {
       );
     } else {
       return (
-        <div className="breadcrumb_component" style={{ marginTop: marginTop }}>
+        <div className="coco-breadcrumb-wrap" style={{ marginTop: marginTop }}>
           <Link to="/" className="coco-breadcrumb-home">
             <img src="/Images/ic-home20px.svg" alt="" />
             <span>Trang chủ</span>

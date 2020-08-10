@@ -6,7 +6,6 @@ import styled from "styled-components";
 import "./style.scss";
 
 const Menu = (props) => {
-  let [activeDropdown, setActiveDropdown] = useState(null);
   const data = [
     "TRANG ĐIỂM",
     "SON MÔI",
@@ -26,7 +25,7 @@ const Menu = (props) => {
       <DropdownMenu
         title="DANH MỤC SẢN PHẨM"
         menuItem={data}
-        className={activeDropdown}
+        setActiveMenu={props.setActiveMenu}
         // get props from child component
         setOverFlow={props.setOverFlow}
       />
