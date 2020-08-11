@@ -3,7 +3,7 @@ import SelectBox from "../../../components/SelectBox";
 import Product from "./Product";
 import PaginationTop from "./PaginationTop";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../../../sass/global/components/ListProductByCategories/ListCategoriesDetail/_list_categories_detail.scss";
+import "../../../sass/global/components/_comopnent.list.scss";
 
 const ListCategoriesDetail = (props) => {
     const [activePage, setActivePage] = useState(null);

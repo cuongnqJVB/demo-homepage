@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import Button from "../../Buttons";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "../../../sass/global/components/ListProductByCategories/ListBrand/_list_brand.scss";
+import "../../../sass/global/components/_comopnent.list.scss";
 
 function BtnNextArrow(props) {
     const { className, onClick } = props;

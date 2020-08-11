@@ -5,7 +5,7 @@ import SearchBox from "../Search";
 import Account from "./Account";
 import Cart from "./Cart";
 import TopHeader from "./TopHeader";
-import "../../sass/global/components/Header/_header.scss";
+import "../../sass/global/components/_component.header.scss";
 
 const WrapHeader = styled.div`
   width: 100%;

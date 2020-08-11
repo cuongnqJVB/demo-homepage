@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import DropdownMenu from "./DropdownMenu";
 import DropdownItem from "./Dropdown";
 import styled from "styled-components";
-import "../../sass/global/components/Menu/_menu.scss";
+import "../../sass/global/components/_component.menu.scss";
 
 const Menu = (props) => {
     const data = [

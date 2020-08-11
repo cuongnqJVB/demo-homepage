@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../../../sass/global/components/ListProductByCategories/ListArticle/_list_article.scss";
+import "../../../sass/global/components/_comopnent.list.scss";
 
 class ListArticle extends Component {
     render() {

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import Button from "../Buttons";
+import Item from "../Items";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../sass/global/components/_component.flashsale.scss";
@@ -71,56 +72,53 @@ class FlashSale extends Component {
                     {data && type === "flashsale" ? (
                         data.map((item, index) => {
                             return (
-                                <div className="fsws__item fsws__itemActive ">
-                                    <div className="fswsic__actived">
-                                        <div className="fswsica__title">
-                                            Kem Chống Nắng The Saem Eco Earth Power
-                    </div>
-                                        <div className="fswsica__btn">
-                                            <Button
-                                                text={<img src="./Images/ic-heart.svg" />}
-                                                className="fswsica__btnLike"
-                                            />
-                                            <Button
-                                                text={<img src="./Images/ic-cart-red.svg" />}
-                                                className="fswsica__btnCart"
-                                            />
-                                            <Button text="Mua ngay" className="fswsica__btnBuy" />
-                                        </div>
-                                    </div>
-                                    <div className="fswsi_label">
-                                        <img src="./Images/ic-new.svg" />
-                                    </div>
-                                    <img src="./Images/product3.jpg" />
-                                    <div className="fswsi_discount">
-                                        <span>-15%</span>
-                                        {/* <img src="/Images/ic-discount.svg" /> */}
-                                    </div>
-                                    <div className="fswsi__title">
-                                        Nước tẩy trang Eucerin dành cho mọi loại da
-                  </div>
-                                    <div className="fswsi__price">
-                                        <span>211.500 đ</span>
-                                        <span>235.500 đ</span>
-                                    </div>
-                                    <div className="fswsi__countdown">
-                                        <div
-                                            className="countdown_bar"
-                                            style={{ width: "26%" }}
-                                        ></div>
-                                        <span>Còn lại 12 ngày 13:27:17</span>
-                                    </div>
-                                </div>
+                                <Item />
+                                // <div className="fsws__item fsws__itemActive ">
+                                //     <div className="fswsic__actived">
+                                //         <div className="fswsica__title">
+                                //             Kem Chống Nắng The Saem Eco Earth Power
+                                //         </div>
+                                //         <div className="fswsica__btn">
+                                //             <Button
+                                //                 text={<img src="./Images/ic-heart.svg" alt="" />}
+                                //                 className="fswsica__btnLike"
+                                //             />
+                                //             <Button
+                                //                 text={<img src="./Images/ic-cart-red.svg" alt="" />}
+                                //                 className="fswsica__btnCart"
+                                //             />
+                                //             <Button text="Mua ngay" className="fswsica__btnBuy" />
+                                //         </div>
+                                //     </div>
+                                //     <div className="fswsi_label">
+                                //         <img src="./Images/ic-new.svg" alt="" />
+                                //     </div>
+                                //     <img src="./Images/product3.jpg" alt="" />
+                                //     <div className="fswsi_discount">
+                                //         <span>-15%</span>
+                                //     </div>
+                                //     <div className="fswsi__title">
+                                //         Nước tẩy trang Eucerin dành cho mọi loại da
+                                //     </div>
+                                //     <div className="fswsi__price">
+                                //         <span>211.500 đ</span>
+                                //         <span>235.500 đ</span>
+                                //     </div>
+                                //     <div className="fswsi__countdown">
+                                //         <div
+                                //             className="countdown_bar"
+                                //             style={{ width: "26%" }}
+                                //         ></div>
+                                //         <span>Còn lại 12 ngày 13:27:17</span>
+                                //     </div>
+                                // </div>
                             );
                         })
-                    ) : (
-                            <div></div>
-                        )}
-                    {data && type === "brand" ? (
+                    ) : data && type === "brand" ? (
                         data.map((item, index) => {
                             return (
                                 <div className="fslb__item" key={index}>
-                                    <img src="./Images/brand1.jpg" />
+                                    <img src="./Images/brand1.jpg" alt="" />
                                     <div className="fslbi__label">
                                         <span>{item}</span>
                                     </div>
@@ -128,8 +126,9 @@ class FlashSale extends Component {
                             );
                         })
                     ) : (
-                            <div></div>
-                        )}
+                                <div></div>
+                            )}
+
                     {/* {data.map((item, index) => {
             return (
               <div className="fsws__item">
@@ -155,7 +154,7 @@ class FlashSale extends Component {
             );
           })} */}
                 </Slider>
-            </div>
+            </div >
         );
     }
 }

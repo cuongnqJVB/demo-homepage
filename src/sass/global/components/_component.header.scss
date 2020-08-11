@@ -1,0 +1,167 @@
+/*------begin: MAIN HEADER------*/
+.coco-layout-wrap-main-dad_header {
+    .coco-layout-wrap-main-child_header {
+        max-width: 1648px;
+        margin: 0 auto;
+        padding: 24px 0px;
+        display: flex;
+        justify-content: space-between;
+        .coco-layout-wrap-main-child-header-search_field {
+            min-width: 669px;
+            height: 45px;
+            padding: 0 24px;
+            background: #ffffff;
+            border-color: transparent;
+            outline: none;
+            box-shadow: 0px 3px 3px #0000001a;
+            -moz-box-shadow: 0px 3px 6px #0000001a;
+            -webkit-box-shadow: 0px 3px 6px #0000001a;
+            border-radius: 5px;
+        }
+        .coco-layout-wrap-main-child-header-list_item {
+            display: flex;
+            justify-content: space-between;
+            > img {
+                padding-right: 32px;
+            }
+        }
+    }
+}
+/*------end: MAIN HEADER------*/
+
+/*------begin: TOP HEADER------*/
+.top-header-wrap {
+    max-width: 1648px;
+    margin: 0 auto;
+    padding: 7px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .top-header--phone {
+        display: flex;
+        align-items: center;
+        > img {
+            background: #000;
+            padding: 5px;
+            border-radius: 50%;
+            border: 1px solid #ffffff;
+        }
+        > span {
+            font-family: NunitoSansRegular;
+            font-size: 16px;
+            line-height: 21px;
+            padding-left: 8px;
+            color: #fff;
+        }
+    }
+    .top-header--title {
+        font-family: NunitoSansRegular;
+        font-size: 16px;
+        line-height: 21px;
+        color: #fff;
+    }
+    .top-header--groupBtn {
+        display: flex;
+        .btnLang {
+            > button {
+                cursor: pointer;
+                padding: 1px 9px;
+                background: #000000;
+                outline: none;
+                border: none;
+                transition: all ease 0.3s;
+                > a {
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+                    span {
+                        transition: all ease 0.3s;
+                        font-family: NunitoSansBold;
+                        font-size: 16px;
+                        line-height: 22px;
+                        display: inline-block;
+                        color: #ffffff;
+                    }
+                }
+                &:focus {
+                    background: #fff;
+                    span {
+                        color: #000000;
+                    }
+                }
+                &:hover {
+                    background: #fff;
+                    span {
+                        color: #000000;
+                    }
+                }
+            }
+        }
+    }
+}
+/*------end: TOP HEADER------*/
+
+/*------begin: ACCOUNT------*/
+.account-wrap {
+    align-items: center;
+    > img {
+        padding-right: 8px;
+    }
+    > div {
+        > a {
+            font-family: NunitoSansRegular;
+            font-size: 18px;
+            line-height: 24px;
+            color: #000000;
+            text-decoration: none;
+        }
+        > span {
+            font-family: NunitoSansRegular;
+            font-size: 16px;
+            line-height: 21px;
+            color: #000000;
+        }
+    }
+}
+/*------end: ACCOUNT------*/
+
+/*------begin: CART------*/
+.cart-button-wrap {
+    .cart-button-btn {
+        cursor: pointer;
+        padding: 11px 21px;
+        background: transparent;
+        outline: none;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        transition: all ease 0.3s;
+        .button-btn_link {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            > img {
+                padding-right: 7px;
+            }
+            span {
+                transition: all ease 0.3s;
+                font-family: NunitoSansRegular;
+                font-size: 18px;
+                line-height: 24px;
+                display: inline-block;
+                color: #000000;
+                letter-spacing: -0.64px;
+                &:nth-last-child(2) {
+                    padding-right: 6px;
+                }
+            }
+        }
+
+        &:hover {
+            background: #fff;
+            span {
+                color: #000000;
+            }
+        }
+    }
+}
+/*------end: CART------*/
