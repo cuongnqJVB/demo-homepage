@@ -1,0 +1,58 @@
+.coco-breadcrumb-wrap {
+    display: flex;
+    align-items: center;
+    a {
+      padding: 0 27px 0 0;
+      position: relative;
+      font-family: NunitoSansRegular;
+      color: #000000;
+      font-size: 16px;
+      line-height: 21px;
+      text-decoration: none;
+      &::before {
+        content: "";
+        background: url("/Images/ic-breadcrumb.svg") center no-repeat;
+        position: absolute;
+        right: 6px;
+        top: 0px;
+        width: 9px;
+        height: 16px;
+      }
+      &:nth-last-child(1) {
+        &::before {
+          content: none;
+        }
+      }
+    }
+    .breadcrumb-home--first {
+      text-decoration: none;
+      &:hover {
+        color: #000000;
+      }
+    }
+    .breadcrumb-home--second {
+      text-decoration: none;
+      &:hover {
+        color: #000000;
+      }
+      &:before {
+        display: none;
+      }
+    }
+    .coco-breadcrumb-home {
+      display: flex;
+      text-decoration: none;
+      &:hover {
+        color: #000000;
+      }
+      &:before {
+        top: 0px;
+      }
+      img {
+        width: 19px;
+        height: 15px;
+        margin-right: 4px;
+      }
+    }
+  }
+  

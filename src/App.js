@@ -4,31 +4,27 @@ import Layout from "./hocs/Layout";
 import HomePage from "./pages/Home";
 import TrangDiem from "./pages/CategoriesDetail/TrangDiem";
 import "./App.css";
-import "./scss/font.scss";
+import "./sass/config/_font.scss";
 
 class App extends Component {
-  state = {
-    name: null,
-  };
-  render() {
-    return (
-      <BrowserRouter>
-        <React.Fragment>
-          <Layout>
-            <Switch>
-              <Route
-                path="/"
-                component={HomePage}
-                // handler={"AHAHAHAHAHA"}
-                exact
-              />
-              <Route path="/trang-diem" component={TrangDiem} />
-            </Switch>
-          </Layout>
-        </React.Fragment>
-      </BrowserRouter>
-    );
-  }
+    render() {
+        return (
+            <BrowserRouter>
+                <React.Fragment>
+                    <Layout>
+                        <Switch>
+                            <Route
+                                path="/"
+                                component={HomePage}
+                                exact
+                            />
+                            <Route path="/trang-diem" component={TrangDiem} />
+                        </Switch>
+                    </Layout>
+                </React.Fragment>
+            </BrowserRouter>
+        );
+    }
 }
 
 export default App;
