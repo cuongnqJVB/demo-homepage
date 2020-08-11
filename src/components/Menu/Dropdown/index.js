@@ -1,10 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import Button from "../../Buttons";
-import styled from "styled-components";
-// import "./style.scss";
 
 export default ({ title, data, width, padding, type, className, ...props }) => {
-    const [dataDropdown, setDataDropdown] = useState([]);
     const renderDropdownSale = (type, data) => {
         if (type === "sale") {
             return (

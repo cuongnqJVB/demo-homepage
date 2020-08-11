@@ -21,9 +21,9 @@
         background: #272727;
     }
     &:hover .coco-menu-dropdownd-x_wrap__list {
-        opacity: 1;
-        display: block;
-        visibility: visible;
+        opacity: 1 !important;
+        display: block !important;
+        visibility: visible !important;
         z-index: 5;
     }
     .coco-menu-dropdownd-x_wrap {
@@ -160,7 +160,6 @@
     padding: 13px 26px;
     position: relative;
     width: 17%;
-    // flex: 1;
     &:hover {
         background: #272727;
     }
@@ -204,7 +203,7 @@
         // min-height: 484px;
         background-color: #f9f9f9;
         color: #000;
-        top: 48px;
+        top: 47px;
         left: 0px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         -moz-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);

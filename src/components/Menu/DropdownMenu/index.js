@@ -19,7 +19,7 @@ export default ({ menuItem, title, width, padding, className, ...props }) => {
                 </div>
                 <span>{title}</span>
                 <div
-                    class="coco-menu-dropdown_detail__content"
+                    class={`coco-menu-dropdown_detail__content`}
                     // set opacity for layout when hover menu
                     onMouseEnter={() => {
                         props.setOverFlow("layout_overflow");
@@ -55,7 +55,7 @@ export default ({ menuItem, title, width, padding, className, ...props }) => {
                                                     <div className="coco-mdddic-block1_content__col">
                                                         <div className="coco-mdddic-block1-content_col__title">
                                                             Trang Điểm Mặt
-                            </div>
+                                                        </div>
                                                         <div className="coco-mdddic-block1-content_col__subtitle">
                                                             <span>Kem Nền</span>
                                                             <span>Kem Lót</span>
@@ -69,7 +69,7 @@ export default ({ menuItem, title, width, padding, className, ...props }) => {
                                                     <div className="coco-mdddic-block1_content__col">
                                                         <div className="coco-mdddic-block1-content_col__title">
                                                             Trang Điểm Vùng Mắt
-                            </div>
+                                                        </div>
                                                         <div className="coco-mdddic-block1-content_col__subtitle">
                                                             <span>Kẻ Chân Mày</span>
                                                             <span>Kẻ Mắt</span>
