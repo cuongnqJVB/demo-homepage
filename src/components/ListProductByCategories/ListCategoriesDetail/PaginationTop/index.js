@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 const PaginationTop = (props) => {
     const { data } = props;
     let getNewData = [];
-    let recordPerPage = 55;
+    let recordPerPage = 44;
     let [listData, setListData] = useState([]);
     let [currentPage, setCurrentPage] = useState(1);
     //   let [recordPerPage, setRecordPerPage] = useState(55);
@@ -29,6 +29,7 @@ const PaginationTop = (props) => {
             changePage(currentPage);
         }
     };
+
     const next = () => {
         if (currentPage < totalPages()) {
             setCurrentPage(currentPage++);
@@ -52,13 +53,13 @@ const PaginationTop = (props) => {
         }
         setCurrentPage(page);
 
-        if (page == 1) {
+        if (page === 1) {
             setPrevPage("disabled");
         } else {
             setPrevPage("");
         }
 
-        if (page == totalPages()) {
+        if (page === totalPages()) {
             setNextPage("disabled");
         } else {
             setNextPage("");
@@ -82,7 +83,7 @@ const PaginationTop = (props) => {
                     }}
                     disabled={prevPage}
                 >
-                    <img src="./Images/ic-prev-page.svg" />
+                    <img src="./Images/ic-prev-page.svg" alt="" />
                 </button>
                 <button
                     id="button-next"
@@ -94,7 +95,7 @@ const PaginationTop = (props) => {
                     }}
                     disabled={nextPage}
                 >
-                    <img src="./Images/ic-next-page.svg" />
+                    <img src="./Images/ic-next-page.svg" alt="" />
                 </button>
             </div>
         </div>

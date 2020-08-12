@@ -1,0 +1,21 @@
+/*---Custom scrollbar---*/
+.ccs-scrollbar-red {
+    ::-webkit-scrollbar {
+        width: 4px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #ffffff;
+        border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background: #c73030;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #c73030;
+    }
+}
+
+/*---Custom margin---*/
+
+/*---Custom padding---*/

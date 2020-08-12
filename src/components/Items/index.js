@@ -16,20 +16,20 @@ class Item extends Component {
                         <div className="item-hovered--title">
                             Kem Chống Nắng The Saem Eco Earth Power
                      </div>
-                        <d3iv className="item-hovered--button">
+                        <div className="item-hovered--button">
                             <Button
                                 text={<img src="./Images/ic-heart.svg" alt="" />}
-                                className="item-hovered_btn__like"
+                                className="ccs-btn ccs-btn-like"
                             />
                             <Button
                                 text={<img src="./Images/ic-cart-red.svg" alt="" />}
-                                className="item-hovered_btn__cart"
+                                className="ccs-btn ccs-btn-cart"
                             />
                             <Button
                                 text="Mua ngay"
-                                className="item-hovered_btn__buy"
+                                className="ccs-btn ccs-btn-buy"
                             />
-                        </d3iv>
+                        </div>
                     </div>
                     <div className="ccs-item-label" style={{ display: setLabel }}>
                         <img src="./Images/ic-new.svg" alt="" />
@@ -85,15 +85,15 @@ class Item extends Component {
                         <div className="item-hovered--button">
                             <Button
                                 text={<img src="./Images/ic-heart.svg" alt="" />}
-                                className="item-hovered_btn__like"
+                                className="ccs-btn ccs-btn-like"
                             />
                             <Button
                                 text={<img src="./Images/ic-cart-red.svg" alt="" />}
-                                className="item-hovered_btn__cart"
+                                className="ccs-btn ccs-btn-cart"
                             />
                             <Button
                                 text="Mua ngay"
-                                className="item-hovered_btn__buy"
+                                className="ccs-btn ccs-btn-buy"
                             />
                         </div>
                     </div>

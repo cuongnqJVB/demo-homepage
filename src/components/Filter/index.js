@@ -20,14 +20,14 @@ const Filter = (props) => {
                     <div className="coco-filter--list_item">
                         <div className="filter--list_item__header">
                             Trang điểm
-              <span style={{ display: totalItem ? "" : "none" }}>
+                        <span style={{ display: totalItem ? "" : "none" }}>
                                 ({totalItem})
-              </span>
+                        </span>
                         </div>
                         <div className="filter--list_item__expand">
                             <div className="item_expand__root  item_expand__active">
                                 Trang điểm mặt
-              </div>
+                            </div>
                             <div className="item_expand__child">
                                 <span>Kem Nền</span>
                                 <span>Kem Lót</span>

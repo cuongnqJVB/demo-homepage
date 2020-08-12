@@ -12,7 +12,7 @@ class Cart extends Component {
             <Wrap className={`cart-button-wrap ${className}`}>
                 <button className="cart-button-btn">
                     <Link className="button-btn_link" to={TextLink}>
-                        <img src="./Images/ic-cart.svg" />
+                        <img src="./Images/ic-cart.svg" alt="" />
                         <span>{text}</span>
                         <span>({total})</span>
                     </Link>

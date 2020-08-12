@@ -1,0 +1,81 @@
+.ccs-navbar-wrap {
+    display: flex;
+    // width: 75%;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    > span {
+        width: 12%;
+        position: sticky;
+        font-family: NunitoSansSemiBold;
+        font-size: 16px;
+        line-height: 21px;
+        color: #000000;
+    }
+    &:nth-last-child(1) {
+        background: antiquewhite;
+    }
+    .navbar_left__button {
+        cursor: pointer;
+        padding: 0px 21px;
+        min-height: 40px;
+        outline: none;
+        background: #ffffff;
+        border-color: #ffffff;
+        box-shadow: 0px 3px 6px #00000029;
+        -moz-box-shadow: 0px 3px 6px #00000029;
+        -webkit-box-shadow: 0px 3px 6px #00000029;
+        border-radius: 5px;
+        white-space: nowrap;
+        transition: all ease 0.3s;
+
+        &:focus {
+            background: #c73030;
+            border-color: #c73030;
+            color: #ffffff;
+        }
+
+        > a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            z-index: -1;
+            > img {
+                padding-right: 7px;
+            }
+            span {
+                transition: all ease 0.3s;
+                font-family: NunitoSansRegular;
+                font-size: 18px;
+                line-height: 24px;
+                display: inline-block;
+                color: #000000;
+                z-index: 2;
+                &:nth-last-child(2) {
+                    padding-right: 6px;
+                }
+                &:focus {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+    .navbar_left__selectbox {
+        > select {
+            min-height: 40px;
+            padding: 0px 21px;
+            outline: none;
+            background: #ffffff;
+            border-color: #ffffff;
+            font-family: NunitoSansRegular;
+            font-size: 18px;
+            line-height: 24px;
+            color: #000000;
+            box-shadow: 0px 3px 6px #00000029;
+            -moz-box-shadow: 0px 3px 6px #00000029;
+            -webkit-box-shadow: 0px 3px 6px #00000029;
+            border-radius: 5px;
+            transition: all ease 0.3s;
+        }
+    }
+}

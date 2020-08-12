@@ -1,0 +1,45 @@
+.coco-paginate-wrap {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    .coco-paginate-item {
+        width: 25%;
+        display: flex;
+        justify-content: space-between;
+        > img {
+            cursor: pointer;
+        }
+        .paginate-item--transform {
+            transform: rotate(-180deg);
+        }
+        .paginate-item--child {
+            width: 55%;
+            display: flex;
+            justify-content: space-between;
+            > button {
+                width: 32px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: transparent;
+                border-color: transparent;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: all ease 0.2s;
+                &:focus {
+                    background: #000000;
+                }
+                &:focus > span {
+                    color: #ffffff;
+                }
+                > span {
+                    font-family: NunitoSansRegular;
+                    font-size: 16px;
+                    line-height: 18px;
+                    color: #000000;
+                }
+            }
+        }
+    }
+}

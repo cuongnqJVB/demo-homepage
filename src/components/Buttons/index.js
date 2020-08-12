@@ -1,22 +1,19 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import styled from "styled-components";
-import styles from "./style.module.scss";
-
+import "../../sass/global/components/_component.button.scss";
 class Button extends Component {
-  render() {
-    const { text, TextLink, className } = this.props;
-    const Wrap = styled.div``;
-    return (
-      <Wrap className={`${styles.WrapButton} ${className}`}>
-        <button className={`${styles.wb_button}`}>
-          <Link className={styles.wbb_link} to={TextLink}>
-            <span>{text}</span>
-          </Link>
-        </button>
-      </Wrap>
-    );
-  }
+    render() {
+        const { text, TextLink, className } = this.props;
+        return (
+            <div className={`ccs-button-cpn ${className}`}>
+                <button className="ccs-button-wrap">
+                    <Link className="ccs-button-link" to={TextLink}>
+                        <span>{text}</span>
+                    </Link>
+                </button>
+            </div>
+        );
+    }
 }
 
 export default Button;
