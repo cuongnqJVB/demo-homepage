@@ -1,5 +1,5 @@
-/*------begin: Type Item 1 ------*/
-.list-product-horizontal-product {
+/*------begin: Type Item 1&3 ------*/
+.ccs-item-wrap {
     position: relative;
     width: 264px !important;
     padding: 8px 16px 16px 16px;
@@ -7,12 +7,12 @@
         width: 100%;
         min-height: 264px;
     }
-    .list-product-horizontal--label {
+    .ccs-item-label {
         position: absolute;
         // top: 0;
         // left: 0;
     }
-    .list-product-horizontal--discount {
+    .ccs-item-discount {
         position: absolute;
         background: url('/Images/ic-discount.svg') center no-repeat;
         display: inline-block;
@@ -29,7 +29,7 @@
             color: #ffffff;
         }
     }
-    .list-product-horizontal--title {
+    .ccs-item-title {
         font-family: NunitoSansRegular;
         font-size: 16px;
         line-height: 24px;
@@ -37,7 +37,7 @@
         text-align: left;
         margin-top: 8px;
     }
-    .list-product-horizontal--price {
+    .ccs-item-price {
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -59,7 +59,7 @@
             }
         }
     }
-    .list-product-horizontal--countdown {
+    .ccs-item-countdown {
         // width: 100%;
         position: relative;
         margin-top: 13px;
@@ -69,7 +69,7 @@
         border-radius: 10px;
         background: #cfcfcf;
         overflow: hidden;
-        .horizontal--countdown_bar {
+        .ccs-item--countdownbar {
             content: '';
             position: absolute;
             padding: 2px 0;
@@ -88,30 +88,30 @@
         }
     }
 }
-.list-product-horizontal-product:hover > div {
+.ccs-item-wrap:hover > div {
     opacity: 0.5;
     z-index: -1;
     visibility: hidden;
 }
-.list-product-horizontal-product:hover > img {
+.ccs-item-wrap:hover > img {
     opacity: 0.5;
     // z-index: -1;
     // visibility: hidden;
 }
 
-.list-product-horizontal-product-active {
+.ccs-item-wrap-active {
     position: relative;
-    &:hover > .list-product-horizontal--label {
+    &:hover > .ccs-item-label {
         opacity: 1;
         z-index: 3;
         visibility: visible;
     }
-    &:hover > .list-product-horizontal--discount {
+    &:hover > .ccs-item-discount {
         opacity: 1;
         z-index: 3;
         visibility: visible;
     }
-    &:hover > .list-product-horizontal--hovered {
+    &:hover > .ccs-item-hovered {
         //   width: 100%;
         opacity: 1;
         z-index: 3;
@@ -129,7 +129,7 @@
             // z-index: -1;
         }
     }
-    .list-product-horizontal--hovered {
+    .ccs-item-hovered {
         //   width: 100%;
         display: flex;
         flex-direction: column;
@@ -145,13 +145,13 @@
         right: 0;
         transition: all ease 0.2s;
         background: transparent;
-        .horizontal--hovered_title {
+        .item-hovered-title {
             font-family: NunitoSansRegular;
             font-size: 16px;
             line-height: 24px;
             color: #000000;
         }
-        .horizontal--hovered_button {
+        .item-hovered--button {
             margin-top: 8px;
             display: flex;
             align-items: center;
@@ -161,7 +161,7 @@
                     height: 32px;
                 }
             }
-            .horizontal--hovered_button__like {
+            .item-hovered_btn__like {
                 > button {
                     padding: 0 17px;
                     background: #ffffff;
@@ -181,7 +181,7 @@
                     }
                 }
             }
-            .horizontal--hovered_button__cart {
+            .item-hovered_btn__cart {
                 > button {
                     padding: 0 21px;
                     background: #ffffff;
@@ -201,7 +201,7 @@
                     }
                 }
             }
-            .horizontal--hovered_button__buy {
+            .item-hovered_btn__buy {
                 > button {
                     padding: 0 15px;
                     background: #c73030;
@@ -211,6 +211,8 @@
                     border: 0.5px solid #c73030;
                     border-radius: 22px;
                     > a {
+                        display: flex;
+                        align-items: center;
                         text-decoration: none;
                         > span {
                             font-family: NunitoSansSemiBold;
@@ -225,16 +227,119 @@
         }
     }
 }
-/*------end: Type Item 1 ------*/
+/*------end: Type Item 1&3 ------*/
 
 /*------begin: Type Item 2 ------*/
-
+.ccs-item-brand {
+    width: 253px !important;
+    margin-top: 32px;
+    > img {
+        width: 100%;
+        border-radius: 5px 5px 0px 0px;
+    }
+    .ccs-item-brand--label {
+        padding: 15px 0;
+        text-align: center;
+        > span {
+            font-family: NunitoSansBold;
+            font-size: 20px;
+            line-height: 27px;
+            color: #000000;
+        }
+    }
+}
 /*------end: Type Item 2 ------*/
 
-/*------begin: Type Item 3 ------*/
+/*------begin: Type Item 4 ------*/
+.ccs-item-article {
+    width: 23%;
+    position: relative;
+    &::before {
+        position: absolute;
+        z-index: 0;
+        opacity: 0.3;
+        content: '';
+        background: #000;
+        width: 100%;
+        height: 100%;
+    }
 
-/*------begin: Type Item 3 ------*/
-
+    .ccs-item-background {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        color: #ffffff;
+        min-height: 600px;
+        padding: 0px 24px;
+        background: url('/Images/article1.jpg') center no-repeat;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        > div {
+            padding: 16px 0px;
+            z-index: 5;
+            .item-background--title {
+                font-family: NunitoSansSemiBold;
+                font-size: 21px;
+                line-height: 30px;
+                color: #ffffff;
+                text-transform: uppercase;
+            }
+            .item-background--description {
+                margin-top: 8px;
+                font-family: NunitoSansRegular;
+                font-size: 16px;
+                line-height: 21px;
+                color: #ffffff;
+            }
+        }
+    }
+}
 /*------begin: Type Item 4 ------*/
 
-/*------begin: Type Item 4 ------*/
+/*------begin: Type Item 5 ------*/
+.ccs-item-store {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .ccs-item-img {
+      width: 18rem;
+      height: 18rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f3f3f3;
+      border-radius: 50%;
+      border: 3px solid #000000;
+      > img {
+        display: inline-block;
+        width: 16rem;
+        height: 16rem;
+        border-radius: 50%;
+        border: 3px solid #000000;
+      }
+    }
+    .ccs-item-text {
+      display: flex;
+      flex-direction: column;
+      > span {
+        text-align: center;
+        &:nth-last-child(1) {
+          margin-top: 7px;
+          font-family: NunitoSansRegular;
+          font-size: 16px;
+          line-height: 21px;
+          color: #000000;
+        }
+        &:nth-last-child(2) {
+          margin-top: 24px;
+          font-family: NunitoSansBold;
+          font-size: 18px;
+          line-height: 25px;
+          color: #000000;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+/*------begin: Type Item 5 ------*/

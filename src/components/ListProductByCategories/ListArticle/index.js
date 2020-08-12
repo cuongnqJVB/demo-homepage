@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Item from "../../Items";
 import "../../../sass/global/components/_comopnent.list.scss";
 
 class ListArticle extends Component {
@@ -28,20 +29,9 @@ class ListArticle extends Component {
                 <div className="list-article-content">
                     {data.map((item, index) => {
                         return (
-                            <div className="list-article--item">
-                                <div className=" article--item_background">
-                                    <div>
-                                        <div className="item_background_title">
-                                            Bộ sản phẩm AVÈNE cho mùa hè năng động
-                    </div>
-                                        <div className="item_background_description">
-                                            Avène là dòng Dược Mỹ Phẩm của Pháp với lịch sử phát triển
-                                            gần 300 năm, đã được các bác sĩ da liễu trên toàn thế giới
-                                            xác nhận...
-                    </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <Item
+                                type={4}
+                            />
                         );
                     })}
                 </div>

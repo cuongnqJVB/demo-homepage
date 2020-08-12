@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import Button from "../../Buttons";
 import Item from "../../Items";
+import Slider from "../../Sliders";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../../sass/global/components/_comopnent.list.scss";
@@ -71,12 +72,17 @@ class ListProductHorizontal extends Component {
                         <span>{btnExternal ? btnExternal : "Xem Tất Cả"}</span>
                     </div>
                 </div>
-                <Slider {...settings} className="list-product-horizontal--slider">
+                {/* <Slider
+                    typeSlider={1}
+                    data={["1", "1", "1", "1", "1", "1", "1", "1", "1"]}
+                    className="list-product-horizontal--slider"
+                /> */}
+
+                <Slider typeSlider={1} className="list-product-horizontal--slider">
                     {data.map((item, index) => {
                         return (
                             <Item
-                                setLabel={setLabel}
-                                setWidthCountdown={setWidthCountdown}
+                                type={1}
                             />
                         );
                     })}

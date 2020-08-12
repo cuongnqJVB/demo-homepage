@@ -1,82 +1,150 @@
-import React from "react";
+import React, { Component } from "react";
 import Button from "../Buttons";
-import styled from "styled-components";
 import "../../sass/global/components/_component.item.scss";
-
-const WrapItem = styled.div`
-
-`;
-
-const Item = (...props) => {
-    const {
-        item,
-        index,
-        type,
-        setLabel,
-        setWidthCountdown
-    } = props;
-
-    if (type) {
-        return (
-            <WrapItem className="list-product-horizontal-product list-product-horizontal-product-active">
-                <div className="list-product-horizontal--hovered">
-                    <div className="horizontal--hovered_title">
-                        Kem Chống Nắng The Saem Eco Earth Power
+class Item extends Component {
+    render() {
+        const {
+            data,
+            type,
+            setLabel,
+            setWidthCountdown
+        } = this.props;
+        if (type === 1) {
+            return (
+                <div className="ccs-item-wrap ccs-item-wrap-active">
+                    <div className="ccs-item-hovered">
+                        <div className="item-hovered--title">
+                            Kem Chống Nắng The Saem Eco Earth Power
+                     </div>
+                        <d3iv className="item-hovered--button">
+                            <Button
+                                text={<img src="./Images/ic-heart.svg" alt="" />}
+                                className="item-hovered_btn__like"
+                            />
+                            <Button
+                                text={<img src="./Images/ic-cart-red.svg" alt="" />}
+                                className="item-hovered_btn__cart"
+                            />
+                            <Button
+                                text="Mua ngay"
+                                className="item-hovered_btn__buy"
+                            />
+                        </d3iv>
                     </div>
-                    <div className="horizontal--hovered_button">
-                        <Button
-                            text={<img src="./Images/ic-heart.svg" alt="" />}
-                            className="horizontal--hovered_button__like"
-                        />
-                        <Button
-                            text={<img src="./Images/ic-cart-red.svg" alt="" />}
-                            className="horizontal--hovered_button__cart"
-                        />
-                        <Button
-                            text="Mua ngay"
-                            className="horizontal--hovered_button__buy"
-                        />
+                    <div className="ccs-item-label" style={{ display: setLabel }}>
+                        <img src="./Images/ic-new.svg" alt="" />
+                    </div>
+                    <img src="./Images/product3.jpg" alt="" />
+                    <div className="ccs-item-discount">
+                        <span>-15%</span>
+                    </div>
+                    <div className="ccs-item-title" >
+                        Nước tẩy trang Eucerin dành cho mọi loại da
+                </div>
+                    <div className="ccs-item-price">
+                        <span>211.500 đ</span>
+                        <span>235.500 đ</span>
+                    </div>
+                    <div className="ccs-item-countdown">
+                        <div
+                            className="ccs-item--countdownbar"
+                            style={{
+                                width: setWidthCountdown ? setWidthCountdown : "26%",
+                            }}
+                        ></div>
+                        <span>Còn lại 12 ngày 13:27:17</span>
                     </div>
                 </div>
-                <div className="list-product-horizontal--label" style={{ display: setLabel }}>
-                    <img src="./Images/ic-new.svg" alt="" />
+            );
+        } else if (type === 2) {
+            return (
+                // (data ? data.map((item, index) => {
+                //     return (
+                //         <div className="ccs-item-brand" key={index}>
+                //             <img src="./Images/brand1.jpg" alt="" />
+                //             <div className="ccs-item-brand--label">
+                //                 <span>{item}</span>
+                //             </div>
+                //         </div>
+                //     );
+                // }) : null)
+                <div className="ccs-item-brand">
+                    <img src="./Images/brand1.jpg" alt="" />
+                    <div className="ccs-item-brand--label">
+                        <span>CLINIQUE</span>
+                    </div>
                 </div>
-                <img src="./Images/product3.jpg" alt="" />
-                <div className="list-product-horizontal--discount">
-                    <span>-15%</span>
-                    {/* <img src="/Images/ic-discount.svg" /> */}
+            );
+        } else if (type === 3) {
+            return (
+                <div className="ccs-item-wrap ccs-item-wrap-active">
+                    <div className="ccs-item-hovered">
+                        <div className="item-hovered--title">
+                            Nước tẩy trang Eucerin dành cho mọi loại da
+                        </div>
+                        <div className="item-hovered--button">
+                            <Button
+                                text={<img src="./Images/ic-heart.svg" alt="" />}
+                                className="item-hovered_btn__like"
+                            />
+                            <Button
+                                text={<img src="./Images/ic-cart-red.svg" alt="" />}
+                                className="item-hovered_btn__cart"
+                            />
+                            <Button
+                                text="Mua ngay"
+                                className="item-hovered_btn__buy"
+                            />
+                        </div>
+                    </div>
+                    <img src="./Images/product2.jpg" alt="" />
+                    <div className="ccs-item-title" >
+                        Nước tẩy trang Eucerin dành cho mọi loại da
+                    </div>
+                    <div className="ccs-item-price">
+                        <span>211.500 đ</span>
+                        <span>235.500 đ</span>
+                    </div>
                 </div>
-                <div className="list-product-horizontal--title" >
-                    Nước tẩy trang Eucerin dành cho mọi loại da
-                                    </div>
-                <div className="list-product-horizontal--price">
-                    <span>211.500 đ</span>
-                    <span>235.500 đ</span>
+            );
+        } else if (type === 4) {
+            return (
+                <div className="ccs-item-article">
+                    <div className="ccs-item-background">
+                        <div>
+                            <div className="item-background--title">
+                                Bộ sản phẩm AVÈNE cho mùa hè năng động
+                            </div>
+                            <div className="item-background--description">
+                                Avène là dòng Dược Mỹ Phẩm của Pháp với lịch sử phát triển
+                                gần 300 năm, đã được các bác sĩ da liễu trên toàn thế giới
+                                xác nhận...
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div className="list-product-horizontal--countdown">
-                    <div
-                        className="horizontal--countdown_bar"
-                        style={{
-                            width: setWidthCountdown ? setWidthCountdown : "26%",
-                        }}
-                    ></div>
-                    <span>Còn lại 12 ngày 13:27:17</span>
-                </div>
-            </WrapItem>
-        );
-    } else if (type === 2) {
-        // return (
-        //     <div className="list-brand-product" key={index}>
-        //         <img src="./Images/brand1.jpg" alt="" />
-        //         <div className="list-brand-product--label">
-        //             <span>{item}</span>
-        //         </div>
-        //     </div>
-        // );
-    } else {
-        return (
-            <div></div>
-        );
+            );
+        } else if (type === 5) {
+            return (
+                (data ? data.map((item, index) => {
+                    return (
+                        <div className="ccs-item-store">
+                            <div className="ccs-item-img">
+                                <img src="./Images/coco-store.png" alt="" />
+                            </div>
+                            <div className="ccs-item-text">
+                                <span>258 Bà Triệu, Hà Nội</span>
+                                <span>0988888948</span>
+                            </div>
+                        </div>
+                    );
+                }) : null)
+            );
+        } else {
+            return (
+                <div></div>
+            );
+        }
     }
 }
 

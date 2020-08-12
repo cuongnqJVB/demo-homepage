@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import Slider from "react-slick";
+// import Slider from "react-slick";
+import Slider from "../../Sliders";
 import Button from "../../Buttons";
+import Item from "../../Items";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../../sass/global/components/_comopnent.list.scss";
@@ -46,7 +48,7 @@ class ListProductVertical extends Component {
                 <div className="list-product-vertical--left">
                     <div className="vertical--left_header">{categoriesTitle}</div>
                     <div className="vertical--left_poster">
-                        <img src={posterImg} />
+                        <img src={posterImg} alt="" />
                     </div>
                 </div>
                 <div className="list-product-vertical--right">
@@ -69,45 +71,13 @@ class ListProductVertical extends Component {
                         <div className="right_tab__item">XEM THÊM</div>
                     </div>
                     <div className={`vertical--right_content `}>
-                        <Slider
-                            {...settings}
-                            className={`${
-                                tabActive === 0
-                                    ? "right-content_item__active"
-                                    : "right-content_item__inactive"
-                                }`}
-                        >
+
+                        <Slider typeSlider={2}>
                             {lstItem.map((item, index) => {
                                 return (
-                                    <div className="right-content_item">
-                                        <div className="right-content_item__hovered">
-                                            <div className="item-hovered_title">
-                                                Nước tẩy trang Eucerin dành cho mọi loại da
-                      </div>
-                                            <div className="item-hovered_button">
-                                                <Button
-                                                    text={<img src="./Images/ic-heart.svg" />}
-                                                    className="item-hovered_button__like"
-                                                />
-                                                <Button
-                                                    text={<img src="./Images/ic-cart-red.svg" />}
-                                                    className="item-hovered_button__cart"
-                                                />
-                                                <Button
-                                                    text="Mua ngay"
-                                                    className="item-hovered_button__buy"
-                                                />
-                                            </div>
-                                        </div>
-                                        <img src="./Images/product2.jpg" />
-                                        <div className="right-content_item__title">
-                                            Nước tẩy trang Eucerin dành cho mọi loại da
-                    </div>
-                                        <div className="right-content_item__price">
-                                            <span>211.500 đ</span>
-                                            <span>235.500 đ</span>
-                                        </div>
-                                    </div>
+                                    <Item
+                                        type={3}
+                                    />
                                 );
                             })}
                         </Slider>

@@ -25,7 +25,7 @@ const Header = () => {
                     />
                     <Account />
                     <div className="coco-layout-wrap-main-child-header-list_item">
-                        <img src="./Images/ic-like.svg" />
+                        <img src="./Images/ic-like.svg" alt="" />
                         <Cart text="Giỏ hàng" total="1" />
                     </div>
                 </div>

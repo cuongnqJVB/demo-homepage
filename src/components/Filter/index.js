@@ -12,7 +12,7 @@ const Filter = (props) => {
     return (
         <div className="coco-filter-wrap" style={{ marginTop: marginTop }}>
             <div className="coco-filter--button">
-                <img src="./Images/ic-filter-black.svg" />
+                <img src="./Images/ic-filter-black.svg" alt="" />
                 <span>Bộ lọc tìm kiếm</span>
             </div>
             {listItem.map((item, index) => {

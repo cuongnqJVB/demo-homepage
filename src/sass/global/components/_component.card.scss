@@ -1,0 +1,49 @@
+.ccs-card-horizontal {
+    width: 100%;
+    max-height: 496px;
+    background: #ffffff;
+}
+
+.ccs-card-brand {
+    width: 100%;
+    background: #ffffff;
+    height: unset;
+    box-shadow: 0px 3px 6px #00000029;
+    -moz-box-shadow: 0px 3px 6px #00000029;
+    -webkit-box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+}
+
+.ccs-card-article {
+    width: 100%;
+    background: #f3f3f3;
+    .ccs-card-content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
+    }
+}
+
+.ccs-card-vertical {
+    width: 100%;
+    display: flex;
+    .ccs-card-left{
+        width: 17%;
+    }
+    .ccs-card-right{
+        width: 83%;
+        margin-top: 16px;
+        .card-right--content{
+
+        }
+    }
+}
+.ccs-card-vertical--reverse {
+    flex-direction: row-reverse;
+    .list-product-vertical--left {
+      .vertical--left_header {
+        border-radius: 16px 0px 0px 0px;
+      }
+    }
+  }  
