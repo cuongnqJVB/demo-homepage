@@ -1,7 +1,4 @@
 import React, { useState, useEffect } from "react";
-import SelectBox from "../../../components/SelectBox";
-import Product from "./Product";
-import Button from "../../Buttons";
 import Pagination from "../../Pagniation";
 import PaginationTop from "./PaginationTop";
 import Item from "../../../components/Items";
@@ -13,11 +10,8 @@ const ListCategoriesDetail = (props) => {
     // const [activePage, setActivePage] = useState(null);
     const [listProduct, setListProduct] = useState([]);
     const [DataAfterPagination, setDataAfterPagination] = useState([]);
-    const { marginTop, lstProduct, listFilterChild, totalProduct, data } = props;
+    const { marginTop, lstProduct, listFilterChild, totalProduct } = props;
     useEffect(() => {
-        // if (data) {
-        //   setListItem(data);
-        // }
         if (lstProduct) {
             setListProduct(lstProduct);
         }
@@ -45,7 +39,7 @@ const ListCategoriesDetail = (props) => {
                         ? DataAfterPagination.map((item, index) => {
                             return <Item type={3} key={index} />;
                         })
-                        : lstProduct.map((item, index) => {
+                        : listProduct.map((item, index) => {
                             return <Item type={3} key={index} />;
                         })}
                 </div>
