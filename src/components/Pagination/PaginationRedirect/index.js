@@ -1,5 +1,5 @@
 import React from "react";
-import "../../sass/global/components/_component.pagination.scss";
+import "../../../sass/global/components/_component.pagination.scss";
 
 const Pagniation = () => {
     return (

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const PaginationTop = (props) => {
+const PaginationPage = (props) => {
     const { data } = props;
     let getNewData = [];
     let recordPerPage = 44;
@@ -102,4 +102,4 @@ const PaginationTop = (props) => {
     );
 };
 
-export default PaginationTop;
+export default PaginationPage;

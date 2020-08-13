@@ -5,9 +5,9 @@ import SelectBox from "../../components/SelectBox";
 import "../../sass/global/components/_component.navbar.scss";
 
 const Navbar = (props) => {
-
+    const { width } = props;
     return (
-        <div className="ccs-navbar-wrap">
+        <div className="ccs-navbar-wrap" style={{ width: width }}>
             <span>Sắp xếp theo</span>
             <Button text="Nổi bật" className="ccs-btn-nav" />
             <Button text="Bán chạy" className="ccs-btn-nav" />

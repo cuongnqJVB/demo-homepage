@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Filter from "../../../components/Filter";
 import BreadCrumb from "../../../components/BreadCrumb";
 import Card from "../../../components/Cards";
-import ListCategoriesDetail from "../../../components/ListProductByCategories/ListCategoriesDetail";
+import CardsDetailByCategories from "../../../components/Cards/CardsDetailByCategories";
 import "./style.scss";
 
 const TrangDiem = () => {
@@ -32,7 +32,11 @@ const TrangDiem = () => {
                     <Filter marginTop="32px" data={["1", "2", "3"]} />
                 </div>
                 <div className="trangdiem-body--right">
-                    <ListCategoriesDetail marginTop="32px" lstProduct={demoData()} />
+                    <CardsDetailByCategories
+                        titleCard="Trang Điểm Mặt"
+                        marginTop="32px"
+                        lstProduct={demoData()}
+                    />
                 </div>
             </div>
             <div className="coco-trangdiem-bottom">

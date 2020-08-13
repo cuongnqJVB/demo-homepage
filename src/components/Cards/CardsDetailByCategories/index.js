@@ -1,16 +1,21 @@
 import React, { useState, useEffect } from "react";
-import Pagination from "../../Pagniation";
-import PaginationTop from "./PaginationTop";
+import PaginationRedirect from "../../Pagination/PaginationRedirect";
+import PaginationPage from "../../Pagination/PaginationPage";
 import Item from "../../../components/Items";
 import Navbar from "../../../components/Navbars";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../../sass/global/components/_comopnent.list.scss";
 
-const ListCategoriesDetail = (props) => {
+const CardDetailByCategories = (props) => {
     // const [activePage, setActivePage] = useState(null);
     const [listProduct, setListProduct] = useState([]);
     const [DataAfterPagination, setDataAfterPagination] = useState([]);
-    const { marginTop, lstProduct, listFilterChild, totalProduct } = props;
+    const {
+        marginTop,
+        titleCard,
+        lstProduct,
+        totalProduct
+    } = props;
     useEffect(() => {
         if (lstProduct) {
             setListProduct(lstProduct);
@@ -19,16 +24,16 @@ const ListCategoriesDetail = (props) => {
     return (
         <div className="coco-list-categories-wrap" style={{ marginTop: marginTop }}>
             <div className="coco-list-categories-header">
-                Trang điểm mặt
+                {titleCard}
                 <span style={{ display: totalProduct ? "" : "none" }}>
                     ({totalProduct}) sản phẩm
                 </span>
             </div>
             <div className="coco-list-categories-body">
                 <div className="coco-list-categories--navbar">
-                    <Navbar />
+                    <Navbar width="75%" />
                     <div className="categories--navbar_right">
-                        <PaginationTop
+                        <PaginationPage
                             data={lstProduct}
                             setDataAfterPagination={setDataAfterPagination}
                         />
@@ -43,10 +48,10 @@ const ListCategoriesDetail = (props) => {
                             return <Item type={3} key={index} />;
                         })}
                 </div>
-                <Pagination />
+                <PaginationRedirect />
             </div>
-        </div>
+        </div >
     );
 };
 
-export default ListCategoriesDetail;
+export default CardDetailByCategories;
