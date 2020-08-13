@@ -108,3 +108,54 @@
     }
 }
 /*---end: Button nav---*/
+
+/*---begin: Button login---*/
+.ccs-btn-lg {
+    > button {
+        height: 48px;
+        outline: none;
+        border: none;
+        box-shadow: 0px 3px 6px #00000029;
+        -moz-box-shadow: 0px 3px 6px #00000029;
+        -webkit-box-shadow: 0px 3px 6px #00000029;
+        border-radius: 5px;
+        > a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            > img {
+                width: 24px;
+                height: 24px;
+                margin-right: 8px;
+            }
+            > span {
+                font-family: NunitoSansSemiBold;
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+    }
+}
+.ccs-btn-fb {
+    > button {
+        background: #39589A;
+        padding: 0 37px;
+        > a {
+            > span {
+                color: #ffffff;
+            }
+        }
+    }
+}
+.ccs-btn-gg {
+    > button {
+        padding: 0 47px;
+        background: #00000029;
+        > a {
+            > span {
+                color: #000000;
+            }
+        }
+    }
+}
+/*---begin: Button login---*/

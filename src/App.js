@@ -3,6 +3,7 @@ import { Route, Switch, BrowserRouter } from "react-router-dom";
 import Layout from "./hocs/Layout";
 import HomePage from "./pages/Home";
 import TrangDiem from "./pages/CategoriesDetail/TrangDiem";
+import Login from "./pages/Login";
 import "./App.css";
 import "./sass/config/_font.scss";
 
@@ -19,6 +20,7 @@ class App extends Component {
                                 exact
                             />
                             <Route path="/trang-diem" component={TrangDiem} />
+                            <Route path="/login" component={Login} />
                         </Switch>
                     </Layout>
                 </React.Fragment>
