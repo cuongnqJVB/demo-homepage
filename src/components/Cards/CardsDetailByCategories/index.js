@@ -24,15 +24,15 @@ const CardDetailByCategories = (props) => {
     }, []);
 
     return (
-        <div className="coco-list-categories-wrap" style={{ marginTop: marginTop }}>
-            <div className="coco-list-categories-header">
+        <div className="coco-card-detail-wrap" style={{ marginTop: marginTop }}>
+            <div className="coco-card-detail-header">
                 {titleCard}
                 <span style={{ display: totalProduct ? "" : "none" }}>
-                    ({totalProduct}) sản phẩm
+                    ({totalProduct} sản phẩm)
                 </span>
             </div>
-            <div className="coco-list-categories-body">
-                <div className="coco-list-categories--navbar">
+            <div className="coco-card-detail-body">
+                <div className="coco-card-detail--navbar">
                     <Navbar width="75%" />
                     <div className="categories--navbar_right">
                         <PaginationPage
@@ -41,7 +41,7 @@ const CardDetailByCategories = (props) => {
                         />
                     </div>
                 </div>
-                <div className="coco-list-categories--list">
+                <div className="coco-card-detail--list">
                     {DataAfterPagination
                         ? DataAfterPagination.map((item, index) => {
                             return <Item type={3} key={index} />;

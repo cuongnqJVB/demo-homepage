@@ -48,8 +48,8 @@
 }
 
 /*---CardDetailByCategories---*/
-.coco-list-categories-wrap {
-    .coco-list-categories-header {
+.coco-card-detail-wrap {
+    .coco-card-detail-header {
         font-family: NunitoSansBold;
         font-size: 18px;
         line-height: 25px;
@@ -57,9 +57,9 @@
         color: #000000;
         text-transform: uppercase;
     }
-    .coco-list-categories-body {
+    .coco-card-detail-body {
         margin-top: 23px;
-        .coco-list-categories--navbar {
+        .coco-card-detail--navbar {
             width: 100%;
             display: flex;
             justify-content: space-between;
@@ -156,7 +156,7 @@
                 justify-content: flex-end;
             }
         }
-        .coco-list-categories--list {
+        .coco-card-detail--list {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
