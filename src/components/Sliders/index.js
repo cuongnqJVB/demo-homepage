@@ -19,9 +19,7 @@ function BtnNextArrow(props) {
 class Slider extends Component {
     render() {
         const {
-            data,
             typeSlider,
-            typeItem,
             className,
             setSlidesToShow,
             setSlidesToScroll,

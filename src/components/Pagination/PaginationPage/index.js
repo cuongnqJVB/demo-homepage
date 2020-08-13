@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "../../../sass/global/components/_component.pagination.scss";
 
 const PaginationPage = (props) => {
     const { data } = props;

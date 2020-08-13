@@ -4,7 +4,7 @@ import PaginationPage from "../../Pagination/PaginationPage";
 import Item from "../../../components/Items";
 import Navbar from "../../../components/Navbars";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../../../sass/global/components/_comopnent.list.scss";
+import "../../../sass/global/components/_component.card.scss";
 
 const CardDetailByCategories = (props) => {
     // const [activePage, setActivePage] = useState(null);
@@ -16,11 +16,13 @@ const CardDetailByCategories = (props) => {
         lstProduct,
         totalProduct
     } = props;
+
     useEffect(() => {
         if (lstProduct) {
             setListProduct(lstProduct);
         }
     }, []);
+
     return (
         <div className="coco-list-categories-wrap" style={{ marginTop: marginTop }}>
             <div className="coco-list-categories-header">
