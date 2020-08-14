@@ -1,0 +1,48 @@
+.coco-layout_wrap {
+    background: #f3f3f3;
+}
+.coco-cart-wrap {
+    padding: 24px 0 72px 0;
+    .coco-cart-title {
+        font-family: NunitoSansBold;
+        font-size: 18px;
+        line-height: 25px;
+        color: #000000;
+    }
+    .coco-cart-confirm {
+        width: 100%;
+        justify-content: flex-end;
+        display: flex;
+        margin-top: 32px;
+        .cart-confirm--label {
+            padding-right: 32px;
+            .confirm--label_item {
+                font-family: NunitoSansSemiBold;
+                font-size: 16px;
+                line-height: 24px;
+                color: #000000;
+                text-align: right;
+                > span {
+                    font-family: NunitoSansBold;
+                    font-size: 24px;
+                    line-height: 32px;
+                    color: #c73030;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+    .cart-confirm-btn {
+        > button {
+            min-width: 280px;
+            min-height: 56px;
+            padding: 0 30px;
+        }
+    }
+}
+.cart-input-qty {
+    > input {
+        padding: 0 5px;
+        width: 22%;
+    }
+}

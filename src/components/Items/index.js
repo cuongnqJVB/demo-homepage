@@ -140,6 +140,23 @@ class Item extends Component {
                     );
                 }) : null)
             );
+        } else if (type === 6) {
+            return (
+                (data ? data.map((item, index) => {
+                    return (
+                        <div className="ccs-cart-product">
+                            <div className="ccs-cart-thumb">
+                                <img src="./Images/product-sm-1.png" alt="" />
+                            </div>
+                            <div className="ccs-cart-detail">
+                                <div className="cart-detail--title">M.O.I</div>
+                                <div className="cart-detail--subtitle">Son Kem Lì M.O.I S-Girls 03 Sexy</div>
+                                <span>Quà Tặng: Bông Tẩy Trang Silcot 82 Miếng (Sl có hạn)</span>
+                            </div>
+                        </div>
+                    );
+                }) : null)
+            );
         } else {
             return (
                 <div></div>

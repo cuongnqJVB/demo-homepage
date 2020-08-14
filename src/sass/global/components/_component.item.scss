@@ -227,7 +227,7 @@
         }
     }
 }
-/*------begin: Type Item 4 ------*/
+/*------end: Type Item 4 ------*/
 
 /*------begin: Type Item 5 ------*/
 .ccs-item-store {
@@ -235,43 +235,80 @@
     flex-direction: column;
     align-items: center;
     .ccs-item-img {
-      width: 18rem;
-      height: 18rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #f3f3f3;
-      border-radius: 50%;
-      border: 3px solid #000000;
-      > img {
-        display: inline-block;
-        width: 16rem;
-        height: 16rem;
+        width: 18rem;
+        height: 18rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f3f3f3;
         border-radius: 50%;
         border: 3px solid #000000;
-      }
+        > img {
+            display: inline-block;
+            width: 16rem;
+            height: 16rem;
+            border-radius: 50%;
+            border: 3px solid #000000;
+        }
     }
     .ccs-item-text {
-      display: flex;
-      flex-direction: column;
-      > span {
-        text-align: center;
-        &:nth-last-child(1) {
-          margin-top: 7px;
-          font-family: NunitoSansRegular;
-          font-size: 16px;
-          line-height: 21px;
-          color: #000000;
+        display: flex;
+        flex-direction: column;
+        > span {
+            text-align: center;
+            &:nth-last-child(1) {
+                margin-top: 7px;
+                font-family: NunitoSansRegular;
+                font-size: 16px;
+                line-height: 21px;
+                color: #000000;
+            }
+            &:nth-last-child(2) {
+                margin-top: 24px;
+                font-family: NunitoSansBold;
+                font-size: 18px;
+                line-height: 25px;
+                color: #000000;
+                text-transform: uppercase;
+            }
         }
-        &:nth-last-child(2) {
-          margin-top: 24px;
-          font-family: NunitoSansBold;
-          font-size: 18px;
-          line-height: 25px;
-          color: #000000;
-          text-transform: uppercase;
-        }
-      }
     }
-  }
-/*------begin: Type Item 5 ------*/
+}
+/*------end: Type Item 5 ------*/
+
+/*------begin: Type Item 6 ------*/
+.ccs-cart-product {
+    width: 100%;
+    display: flex;
+    .ccs-cart-thumb {
+        max-width: 112px;
+        min-width: 112px;
+        > img {
+            width: 100%;
+        }
+    }
+    .ccs-cart-detail {
+        padding: 0 16px;
+        .cart-detail--title {
+            margin-top: 8px;
+            font-family: NunitoSansBold;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000000;
+        }
+        .cart-detail--subtitle {
+            padding-bottom: 16px;
+            font-family: NunitoSansSemiBold;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000000;
+        }
+        > span {
+            font-family: NunitoSansRegular;
+            font-size: 16px;
+            line-height: 24px;
+            color: #c73030;
+        }
+    }
+}
+/*------end: Type Item 6 ------*/

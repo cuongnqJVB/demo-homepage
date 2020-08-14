@@ -4,6 +4,7 @@ import Layout from "./hocs/Layout";
 import HomePage from "./pages/Home";
 import TrangDiem from "./pages/CategoriesDetail/TrangDiem";
 import Login from "./pages/Login";
+import Cart from "./pages/Order/Cart";
 import "./App.css";
 import "./sass/config/_font.scss";
 
@@ -21,6 +22,7 @@ class App extends Component {
                             />
                             <Route path="/trang-diem" component={TrangDiem} />
                             <Route path="/login" component={Login} />
+                            <Route path="/cart" component={Cart} />
                         </Switch>
                     </Layout>
                 </React.Fragment>

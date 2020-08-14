@@ -4,6 +4,7 @@ import Input from "../../components/Input";
 import Radio from "../../components/Radio";
 import Checkbox from "../../components/Checkbox";
 import SelectBox from "../../components/SelectBox";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.scss";
 
 const Login = () => {
@@ -73,7 +74,7 @@ const Login = () => {
                     <Button
                         text="Đăng kí tài khoản"
                         type="submit"
-                        className="ccs-btn ccs-btn-danger bottom-left_btn__login"
+                        className="ccs-btn ccs-btn-danger ccs-text-uppercase bottom-left_btn__login"
                     />
                 </div>
                 <div className='login-bottom--right'>

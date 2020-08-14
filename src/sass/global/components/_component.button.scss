@@ -9,6 +9,9 @@
         border: 0.5px solid #c73030;
         border-radius: 22px;
         cursor: pointer;
+        &:focus{
+            outline: none;
+        }
         > a {
             > span {
                 display: flex;
@@ -135,7 +138,7 @@
 }
 .ccs-btn-fb {
     > button {
-        background: #39589A;
+        background: #39589a;
         padding: 0 37px;
         > a {
             > span {
@@ -147,7 +150,7 @@
 .ccs-btn-gg {
     > button {
         padding: 0 47px;
-        background: #E7ECF7;
+        background: #e7ecf7;
         > a {
             > span {
                 color: #000000;
@@ -158,12 +161,12 @@
 /*---end: Button login---*/
 
 /*---begin: Button danger---*/
-.ccs-btn-danger{
+.ccs-btn-danger {
     > button {
         height: 48px;
         outline: none;
         border: none;
-        background: #C73030;
+        background: #c73030;
         box-shadow: 0px 3px 6px #7c707029;
         -moz-box-shadow: 0px 3px 6px #00000029;
         -webkit-box-shadow: 0px 3px 6px #00000029;
@@ -177,7 +180,6 @@
                 font-family: NunitoSansSemiBold;
                 font-size: 18px;
                 line-height: 28px;
-                text-transform: uppercase;
                 text-align: center;
                 color: #ffffff;
             }
@@ -185,3 +187,10 @@
     }
 }
 /*---end: Button danger---*/
+
+/*---Custome some css attributes---*/
+.ccs-text-uppercase {
+    > button {
+        text-transform: uppercase;
+    }
+}
