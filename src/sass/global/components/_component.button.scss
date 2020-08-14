@@ -2,11 +2,13 @@
 .ccs-btn {
     > button {
         height: 32px;
+        outline: none;
         box-shadow: 0px 3px 6px #00000029;
         -moz-box-shadow: 0px 3px 6px #00000029;
         -webkit-box-shadow: 0px 3px 6px #00000029;
         border: 0.5px solid #c73030;
         border-radius: 22px;
+        cursor: pointer;
         > a {
             > span {
                 display: flex;
@@ -62,10 +64,8 @@
 /*---begin: Button nav---*/
 .ccs-btn-nav {
     > button {
-        cursor: pointer;
         padding: 0px 21px;
         min-height: 40px;
-        outline: none;
         background: #ffffff;
         border-color: #ffffff;
         box-shadow: 0px 3px 6px #00000029;
@@ -115,9 +115,6 @@
         height: 48px;
         outline: none;
         border: none;
-        box-shadow: 0px 3px 6px #00000029;
-        -moz-box-shadow: 0px 3px 6px #00000029;
-        -webkit-box-shadow: 0px 3px 6px #00000029;
         border-radius: 5px;
         > a {
             display: flex;
@@ -130,7 +127,7 @@
             }
             > span {
                 font-family: NunitoSansSemiBold;
-                font-size: 18px;
+                font-size: 16px;
                 line-height: 28px;
             }
         }
@@ -150,7 +147,7 @@
 .ccs-btn-gg {
     > button {
         padding: 0 47px;
-        background: #00000029;
+        background: #E7ECF7;
         > a {
             > span {
                 color: #000000;
@@ -158,4 +155,33 @@
         }
     }
 }
-/*---begin: Button login---*/
+/*---end: Button login---*/
+
+/*---begin: Button danger---*/
+.ccs-btn-danger{
+    > button {
+        height: 48px;
+        outline: none;
+        border: none;
+        background: #C73030;
+        box-shadow: 0px 3px 6px #7c707029;
+        -moz-box-shadow: 0px 3px 6px #00000029;
+        -webkit-box-shadow: 0px 3px 6px #00000029;
+        border-radius: 5px;
+        > a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            > span {
+                font-family: NunitoSansSemiBold;
+                font-size: 18px;
+                line-height: 28px;
+                text-transform: uppercase;
+                text-align: center;
+                color: #ffffff;
+            }
+        }
+    }
+}
+/*---end: Button danger---*/

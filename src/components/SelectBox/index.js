@@ -1,6 +1,5 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
-import styled from "styled-components";
 import "../../sass/global/components/_component.selectbox.scss";
 
 const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
@@ -16,6 +15,7 @@ const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
         <img
             src="./Images/ic-arrowtop.svg"
             style={{ transform: "rotate(-180deg)" }}
+            alt=""
         />
     </a>
 ));
@@ -25,12 +25,12 @@ export default ({
     text,
     option,
     value,
-    class_selectbox,
+    className,
     data = [],
     ...props
 }) => {
     return (
-        <div className={`coco-selectbox-wrap ${class_selectbox}`}>
+        <div className={`coco-selectbox-wrap ${className}`}>
             <Form.Control as="select">
                 <option>{option}</option>
             </Form.Control>

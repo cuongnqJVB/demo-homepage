@@ -1,0 +1,493 @@
+.c-checkbox {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    margin: 0;
+    text-align: left;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    > input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+
+        &:checked ~ span {
+            -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            background: none;
+            -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            border: 1px solid #c8cfdd;
+            &:after {
+                display: block;
+            }
+        }
+
+        &:disabled ~ span {
+            opacity: 0.6;
+            pointer-events: none;
+            opacity: 0.6;
+
+            &:after {
+                border-color: #c8cfdd;
+            }
+        }
+    }
+    > label {
+        margin: 0;
+    }
+    > span {
+        border-radius: 3px;
+        background: none;
+        position: absolute;
+        top: 3px;
+        left: 0;
+        height: 18px;
+        width: 18px;
+        border: 1px solid #d1d7e2;
+        font-size: 16px;
+        line-height: 21px;
+        font-family: NunitoSansRegular;
+        color: #000000;
+        &:after {
+            content: '';
+            position: absolute;
+            display: none;
+            top: 50%;
+            left: 50%;
+            margin-left: -2px;
+            margin-top: -6px;
+            width: 5px;
+            height: 10px;
+            border-width: 0 2px 2px 0 !important;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            border: solid #bfc7d7;
+        }
+    }
+
+    &:hover {
+        > input {
+            &:not([disabled]) {
+                &:checked ~ span {
+                    -webkit-transition: all 0.3s ease;
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+    }
+
+    // Checkbox Follow States
+
+    &--disabled {
+        opacity: 0.8;
+        cursor: not-allowed;
+        opacity: 0.7;
+    }
+
+    &--solid {
+        > span {
+            border: 1px solid transparent;
+            background: #e4e8ee;
+            border: 1px solid transparent !important;
+
+            &:after {
+                border: solid #99a6bf;
+            }
+        }
+
+        &:hover {
+            > input {
+                &:not([disabled]) ~ span {
+                    -webkit-transition: all 0.3s ease;
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+
+        > input {
+            &:focus ~ span {
+                -webkit-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+                border: 1px solid transparent !important;
+            }
+
+            &:checked ~ span {
+                background: #dee2ea;
+            }
+        }
+    }
+
+    &--square {
+        > span {
+            border-radius: 0;
+        }
+    }
+
+    &--bold {
+        > span {
+            border-width: 2px !important;
+            -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+
+        > input {
+            &:checked ~ span {
+                border: 2px solid #c8cfdd;
+            }
+        }
+    }
+
+    &--single {
+        width: 18px;
+        height: 18px;
+
+        > span {
+            top: 0px;
+        }
+    }
+
+    // Checkbox Follow Colors
+    &--brand {
+        > span {
+            border: 1px solid #374afb;
+
+            &:after {
+                border: solid #374afb;
+            }
+        }
+
+        > input {
+            &:disabled ~ span {
+                &:after {
+                    border-color: #374afb;
+                }
+
+                opacity: 0.6;
+            }
+
+            &:checked ~ span {
+                border: 1px solid #374afb;
+            }
+        }
+    }
+
+    &--brand &--disabled {
+        opacity: 0.7;
+    }
+
+    &--brand &--bold {
+        > input {
+            &:checked ~ span {
+                border: 2px solid #374afb;
+            }
+        }
+    }
+
+    &--brand &--solid {
+        > span {
+            background: #374afb;
+            border: 1px solid transparent !important;
+
+            &:after {
+                border: solid #ffffff;
+            }
+        }
+
+        > input {
+            &:focus ~ span {
+                border: 1px solid transparent !important;
+            }
+
+            &:checked ~ span {
+                background: #374afb;
+            }
+        }
+    }
+
+    &--light {
+        > span {
+            border: 1px solid #ffffff;
+
+            &:after {
+                border: solid #ffffff;
+            }
+        }
+
+        > input {
+            &:disabled ~ span {
+                &:after {
+                    border-color: #ffffff;
+                }
+
+                opacity: 0.6;
+            }
+
+            &:checked ~ span {
+                border: 1px solid #ffffff;
+            }
+        }
+    }
+
+    &--light &--disabled {
+        opacity: 0.7;
+    }
+
+    &--light &--bold {
+        > input {
+            &:checked ~ span {
+                border: 2px solid #ffffff;
+            }
+        }
+    }
+
+    &--light &--solid {
+        > span {
+            background: #ffffff;
+            border: 1px solid transparent !important;
+
+            &:after {
+                border: solid #282a3c;
+            }
+        }
+
+        > input {
+            &:focus ~ span {
+                border: 1px solid transparent !important;
+            }
+
+            &:checked ~ span {
+                background: #ffffff;
+            }
+        }
+    }
+
+    &--dark {
+        > span {
+            border: 1px solid #282a3c;
+
+            &:after {
+                border: solid #282a3c;
+            }
+        }
+
+        > input {
+            &:disabled ~ span {
+                &:after {
+                    border-color: #282a3c;
+                }
+
+                opacity: 0.6;
+            }
+
+            &:checked ~ span {
+                border: 1px solid #282a3c;
+            }
+        }
+    }
+
+    &--dark &--disabled {
+        opacity: 0.7;
+    }
+
+    &--dark &--bold {
+        > input {
+            &:checked ~ span {
+                border: 2px solid #282a3c;
+            }
+        }
+    }
+
+    &--dark &--solid {
+        > span {
+            background: #282a3c;
+            border: 1px solid transparent !important;
+
+            &:after {
+                border: solid #ffffff;
+            }
+        }
+
+        > input {
+            &:focus ~ span {
+                border: 1px solid transparent !important;
+            }
+
+            &:checked ~ span {
+                background: #282a3c;
+            }
+        }
+    }
+
+    &--normal {
+        > span {
+            border: 1px solid #707070;
+
+            &:after {
+                border: solid #4caf50;
+            }
+        }
+
+        > input {
+            &:disabled ~ span {
+                &:after {
+                    border-color: #4caf50;
+                }
+
+                opacity: 0.6;
+            }
+
+            &:checked ~ span {
+                border: 1px solid #4caf50;
+            }
+        }
+    }
+
+    &--normal &--disabled {
+        opacity: 0.7;
+    }
+
+    &--normal &--bold {
+        > input {
+            &:checked ~ span {
+                border: 2px solid #4caf50;
+            }
+        }
+    }
+
+    &--normal &--solid {
+        > span {
+            background: #4caf50;
+            border: 1px solid transparent !important;
+
+            &:after {
+                border: solid #ffffff;
+            }
+        }
+
+        > input {
+            &:focus ~ span {
+                border: 1px solid transparent !important;
+            }
+
+            &:checked ~ span {
+                background: #4caf50;
+            }
+        }
+    }
+
+    &--success {
+        > span {
+            border: 1px solid #4caf50;
+
+            &:after {
+                border: solid #4caf50;
+            }
+        }
+
+        > input {
+            &:disabled ~ span {
+                &:after {
+                    border-color: #4caf50;
+                }
+
+                opacity: 0.6;
+            }
+
+            &:checked ~ span {
+                border: 1px solid #4caf50;
+            }
+        }
+    }
+
+    &--success &--disabled {
+        opacity: 0.7;
+    }
+
+    &--success &--bold {
+        > input {
+            &:checked ~ span {
+                border: 2px solid #4caf50;
+            }
+        }
+    }
+
+    &--success &--solid {
+        > span {
+            background: #4caf50;
+            border: 1px solid transparent !important;
+
+            &:after {
+                border: solid #ffffff;
+            }
+        }
+
+        > input {
+            &:focus ~ span {
+                border: 1px solid transparent !important;
+            }
+
+            &:checked ~ span {
+                background: #4caf50;
+            }
+        }
+    }
+
+    &--warning {
+        > span {
+            border: 1px solid #ffb822;
+
+            &:after {
+                border: solid #ffb822;
+            }
+        }
+
+        > input {
+            &:disabled ~ span {
+                &:after {
+                    border-color: #ffb822;
+                }
+
+                opacity: 0.6;
+            }
+
+            &:checked ~ span {
+                border: 1px solid #ffb822;
+            }
+        }
+    }
+
+    &--warning &--disabled {
+        opacity: 0.7;
+    }
+
+    &--warning &--bold {
+        > input {
+            &:checked ~ span {
+                border: 2px solid #ffb822;
+            }
+        }
+    }
+
+    &--warning &--solid {
+        > span {
+            background: #ffb822;
+            border: 1px solid transparent !important;
+
+            &:after {
+                border: solid #111111;
+            }
+        }
+
+        > input {
+            &:focus ~ span {
+                border: 1px solid transparent !important;
+            }
+
+            &:checked ~ span {
+                background: #ffb822;
+            }
+        }
+    }
+}

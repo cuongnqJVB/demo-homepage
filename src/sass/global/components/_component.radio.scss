@@ -1,0 +1,50 @@
+.ccs-radio-cpn {
+    .ccs-radio-btn {
+        padding: 5px 0;
+    }
+    .ccs-radio-custom {
+        opacity: 0;
+        position: absolute;
+    }
+    .ccs-radio-custom-label {
+        position: relative;
+        // display: inline-block;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        margin: 0;
+        font-family: NunitoSansRegular;
+        font-size: 16px;
+        line-height: 21px;
+        color: #000000;
+    }
+    .ccs-radio-custom + .ccs-radio-custom-label:before {
+        content: '';
+        border: 1px solid #e5e4e4;
+        display: inline-block;
+        vertical-align: middle;
+        width: 16px;
+        height: 16px;
+        // padding: 2px;
+        margin-right: 10px;
+        border-radius: 50%;
+    }
+    .ccs-radio-custom:checked + .ccs-radio-custom-label:after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        display: block;
+        position: absolute;
+        top: calc(50% - 5px);
+        left: 3px;
+        // padding: 5px;
+        //  background:#009966;
+        background: #c73030;
+        border-radius: 50%;
+    }
+    .ccs-radio-custom:checked + .ccs-radio-custom-label:before {
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+
+    }
+}

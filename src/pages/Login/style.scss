@@ -1,3 +1,6 @@
+.coco-layout_wrap {
+    background: #ffffff;
+}
 .ccs-login-wrap {
     display: flex;
     justify-content: center;
@@ -41,11 +44,79 @@
         justify-content: space-between;
         .login-bottom--left {
             width: 45%;
-            background: antiquewhite;
+            .bottom--left_title {
+                font-family: NunitoSansBold;
+                font-size: 24px;
+                line-height: 30px;
+                color: #000000;
+                text-align: center;
+            }
+            .ccs-input-login {
+                margin-top: 24px;
+                &:nth-last-child(3) {
+                    margin-top: 32px;
+                }
+            }
+            .bottom-left_radiogr {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                margin-top: 19px;
+                .ccs-radio-cpn {
+                    width: 30%;
+                }
+            }
+            .bottom-left_selectbox {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 16px;
+                .selectbox__item {
+                    > select {
+                        min-width: 136px;
+                        padding: 7px 24px;
+                    }
+                }
+            }
+            .c-checkbox-lg1 {
+                margin-top: 16px;
+            }
+            .c-checkbox-lg2 {
+                margin-top: 19px;
+            }
+            .bottom-left_btn__login {
+                margin-top: 24px;
+                > button {
+                    width: 100%;
+                }
+            }
         }
         .login-bottom--right {
             width: 45%;
-            background: pink;
+            padding: 0 26px;
+            .bottom--right_title {
+                font-family: NunitoSansBold;
+                font-size: 24px;
+                line-height: 30px;
+                color: #000000;
+                text-align: center;
+            }
+            .bottom--right_des {
+                color: #000000;
+                text-align: center;
+                .right_des__header {
+                    margin-top: 31px;
+                    font-family: NunitoSansSemiBold;
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+                .right_des_sub {
+                    margin-top: 11px;
+                    font-family: NunitoSansRegular;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
         }
     }
 }
