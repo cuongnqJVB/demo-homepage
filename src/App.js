@@ -5,6 +5,7 @@ import HomePage from "./pages/Home";
 import TrangDiem from "./pages/CategoriesDetail/TrangDiem";
 import Login from "./pages/Login";
 import Cart from "./pages/Order/Cart";
+import OrderProcessing from "./pages/Order/OrderProcessing";
 import "./App.css";
 import "./sass/config/_font.scss";
 
@@ -23,6 +24,7 @@ class App extends Component {
                             <Route path="/trang-diem" component={TrangDiem} />
                             <Route path="/login" component={Login} />
                             <Route path="/cart" component={Cart} />
+                            <Route path="/order-process" component={OrderProcessing} />
                         </Switch>
                     </Layout>
                 </React.Fragment>

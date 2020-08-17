@@ -7,13 +7,13 @@ const Tables = (props) => {
     const {
         columns,
         rows,
-        mode
+        mode,
+        marginTop
     } = props;
-    console.log('rows', rows);
-    if (rows && columns) {
+    if (rows.length > 0 && columns.length > 0) {
         if (mode === "custom") {
             return (
-                <Table responsive="md" className="ccs-cart-table-wrap">
+                <Table responsive="md" className="ccs-cart-table-wrap" style={{ marginTop: marginTop }}>
                     <thead>
                         <tr>
                             {columns.map((item, index) => {
@@ -28,20 +28,28 @@ const Tables = (props) => {
                             return (
                                 <tr>
                                     <td className="td-item-product" key={index}>{item.product}</td>
-                                    <td key={index}>{item.price}</td>
-                                    <td className="td-item-price" key={index}>{item.quantity}</td>
+                                    <td className="td-item-price" key={index}>
+                                        <span>435.000 đ</span>
+                                        <span>{item.price}</span>
+                                    </td>
+                                    <td key={index}>{item.quantity}</td>
                                     <td key={index}>{item.cash}</td>
-                                    {/* <td key={index}>{item.action}</td> */}
                                     <td dangerouslySetInnerHTML={{ __html: item.action }}></td>
                                 </tr>
                             );
                         })}
+                        <tr className="ccs-cart-table--footer">
+                            <td colSpan="5">
+                                <img src="/Images/ic-transpoter.svg" alt="" />
+                                <span>Miễn Phí Vận Chuyển cho đơn hàng từ ₫500.000 (giảm tối đa ₫30.000). Tìm hiểu thêm</span>
+                            </td>
+                        </tr>
                     </tbody>
                 </Table>
             );
         } else {
             return (
-                <Table responsive="md" className="ccs-table-wrap">
+                <Table responsive="md" className="ccs-table-wrap" style={{ marginTop: marginTop }}>
                     <thead>
                         <tr>
                             {columns.map((item, index) => {

@@ -1,0 +1,295 @@
+.ccs-order-process-wrap {
+    padding: 32px 0 80px 0;
+    .ccs-order-content {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 44px;
+        .ccs-order-info {
+            width: 65%;
+            max-width: 1080px;
+            background: #ffffff;
+            .order-info--title {
+                display: flex;
+                justify-content: space-between;
+                padding: 15px 24px 16px 24px;
+                font-size: 24px;
+                line-height: 33px;
+                border-bottom: 1px solid #e5e4e4;
+                color: #000000;
+                > span {
+                    > a {
+                        font-family: NunitoSansSemiBold;
+                        text-decoration: none;
+                        color: #000000;
+                        cursor: pointer;
+                    }
+                }
+                &:nth-last-child(2) {
+                    font-family: NunitoSansBold;
+                }
+            }
+            .ccs-order--form {
+                padding: 27px 24px 24px 24px;
+                .order--form_login {
+                    > span {
+                        font-family: NunitoSansSemiBold;
+                        font-size: 16px;
+                        line-height: 21px;
+                    }
+                    .form_login__btn {
+                        display: flex;
+                        margin-top: 16px;
+                        justify-content: center;
+                        .ccs-btn-lg {
+                            > button {
+                                min-width: 28rem;
+                                padding: 32px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                > a {
+                                    > span {
+                                        font-size: 22px;
+                                        line-height: 34px;
+                                    }
+                                }
+                            }
+                            &:nth-last-child(1) {
+                                margin-left: 24px;
+                            }
+                        }
+                    }
+                    .form_login_line {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-top: 21.5px;
+
+                        > div {
+                            content: '';
+                            width: 46%;
+                            height: 2px;
+                            border-top: 1px solid #adadad;
+                        }
+                        > span {
+                            width: 6%;
+                            text-align: center;
+                            font-family: NunitoSansRegular;
+                            font-size: 21px;
+                            line-height: 28px;
+                        }
+                    }
+                }
+                .order--form_group {
+                    margin-top: 27px;
+                    > span {
+                        font-family: NunitoSansSemiBold;
+                        font-size: 16px;
+                        line-height: 21px;
+                    }
+                    .ccs-input-cpn {
+                        > input {
+                            font-family: NunitoSansSemiBold;
+                            font-size: 16px;
+                            line-height: 21px;
+                        }
+                    }
+                    .coco-selectbox-wrap {
+                        > select {
+                            margin-top: 8px;
+                            font-family: NunitoSansSemiBold;
+                            font-size: 16px;
+                            line-height: 21px;
+                        }
+                    }
+                    .ccs-textarea-cpn {
+                        > textarea {
+                            margin-top: 8px;
+                        }
+                    }
+                }
+            }
+        }
+        .ccs-order-detail {
+            width: 32%;
+            background: #ffffff;
+            .ccs-order-header {
+                display: flex;
+                justify-content: space-between;
+                padding: 15px 24px 16px 24px;
+                font-size: 24px;
+                line-height: 33px;
+                border-bottom: 1px solid #e5e4e4;
+                color: #000000;
+                > span {
+                    > a {
+                        font-family: NunitoSansSemiBold;
+                        text-decoration: none;
+                        color: #000000;
+                        cursor: pointer;
+                    }
+                }
+                &:nth-last-child(2) {
+                    font-family: NunitoSansBold;
+                }
+            }
+            .ccs-order-list-product {
+                width: 100%;
+                padding: 0 24px;
+                margin-top: 24px;
+                min-height: 470px;
+                max-height: 470px;
+                overflow: auto;
+            }
+            // custom scrollbar
+            ::-webkit-scrollbar {
+                width: 4px;
+            }
+            ::-webkit-scrollbar-track {
+                background: #ffffff;
+                border-radius: 2px;
+            }
+            ::-webkit-scrollbar-thumb {
+                border-radius: 2px;
+                background: #bebebe;
+            }
+            ::-webkit-scrollbar-thumb:hover {
+                background: #bebebe;
+            }
+            .ccs-order-form {
+                padding: 0 24px;
+                .ccs-order-label-group {
+                    margin-top: 19px;
+                    display: flex;
+                    justify-content: space-between;
+                    > span {
+                        font-family: NunitoSansSemiBold;
+                        font-size: 16px;
+                        line-height: 21px;
+                        color: #000000;
+                    }
+                }
+                .ccs-order-promotion {
+                    margin-top: 16px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .ccs-input-cpn {
+                        width: 70%;
+                    }
+                    .ccs-btn-danger {
+                        > button {
+                            max-height: 40px;
+                            padding: 0 25px;
+                        }
+                    }
+                }
+                .ccs-order-border {
+                    content: '';
+                    margin-top: 16px;
+                    border-top: 2px solid #000000;
+                }
+                .ccs-order-label-total {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: 25px;
+                    > span {
+                        font-family: NunitoSansSemiBold;
+                        &:nth-last-child(1) {
+                            font-size: 24px;
+                            line-height: 33px;
+                            color: #c73030;
+                        }
+                        &:nth-last-child(2) {
+                            font-size: 16px;
+                            line-height: 21px;
+                            color: #000000;
+                        }
+                    }
+                }
+                .ccs-order-label-coin {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 18px;
+                    padding: 11px 0;
+                    background: #f3f3f3;
+                    border: 1px dashed #707070;
+                    border-radius: 5px;
+                    > span {
+                        font-family: NunitoSansSemiBold;
+                        &:nth-last-child(1) {
+                            font-size: 24px;
+                            line-height: 33px;
+                            color: #c73030;
+                            margin-top: 1px;
+                        }
+                        &:nth-last-child(2) {
+                            font-size: 16px;
+                            line-height: 21px;
+                            color: #000000;
+                        }
+                    }
+                }
+                .ccs-btn-order {
+                    margin-top: 24px;
+                    > button {
+                        width: 100%;
+                        padding: 28px 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+        .ccs-order-deliver {
+            width: 65%;
+            margin-top: 32px;
+            padding-bottom: 44px;
+            background: #ffffff;
+            .order-deliver--header {
+                font-family: NunitoSansBold;
+                font-size: 24px;
+                line-height: 33px;
+                color: #000000;
+                padding: 15px 24px 16px 24px;
+                border-bottom: 1px solid #e5e4e4;
+            }
+            .order-deliver--option {
+                margin-top: 40px;
+                padding: 0px 24px 27px 24px;
+                border-bottom: 1px solid #e5e4e4;
+                .deliver--option_title {
+                    font-family: NunitoSansBold;
+                    font-size: 18px;
+                    line-height: 25px;
+                    color: #000000;
+                }
+                .deliver--option_item {
+                    margin-top: 15px;
+                    &:nth-last-child(1) {
+                        margin-top: 19px;
+                    }
+                    .option_item_radio3 {
+                        .ccs-radio-custom-label {
+                            // align-items: unset;
+                            white-space: pre-line;
+                        }
+                    }
+                    .option_item__warning {
+                        margin-top: 11px;
+                        font-family: NunitoSansSemiBold;
+                        font-size: 16px;
+                        line-height: 21px;
+                        color: #c73030;
+                        padding-left: 26px;
+                    }
+                }
+            }
+        }
+    }
+}

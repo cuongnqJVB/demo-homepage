@@ -312,3 +312,41 @@
     }
 }
 /*------end: Type Item 6 ------*/
+
+/*------begin: Type Item 7 ------*/
+.ccs-cart-item-order {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .ccs-cart-thumb {
+        max-width: 128px;
+        min-width: 128px;
+        > img {
+            width: 100%;
+        }
+    }
+    .ccs-cart-detail {
+        width: 48%;
+        padding: 0 16px;
+        color: #000000;
+        font-family: NunitoSansSemiBold;
+        font-size: 16px;
+        line-height: 24px;
+        .cart-detail--title {
+            margin-top: 8px;
+        }
+        .cart-detail--subtitle {
+            padding-bottom: 8px;
+        }
+        > span {
+        }
+    }
+    .ccs-cart-price {
+        font-family: NunitoSansSemiBold;
+        font-size: 21px;
+        line-height: 28px;
+        color: #c73030;
+        white-space: nowrap;
+    }
+}
+/*------end: Type Item 7 ------*/

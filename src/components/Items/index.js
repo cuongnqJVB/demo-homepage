@@ -157,6 +157,24 @@ class Item extends Component {
                     );
                 }) : null)
             );
+        } else if (type === 7) {
+            return (
+                (data ? data.map((item, index) => {
+                    return (
+                        <div className="ccs-cart-item-order">
+                            <div className="ccs-cart-thumb">
+                                <img src="./Images/product-sm-1.png" alt="" />
+                            </div>
+                            <div className="ccs-cart-detail">
+                                <div className="cart-detail--title">M.O.I</div>
+                                <div className="cart-detail--subtitle">Son Kem Lì M.O.I S-Girls 03 Sexy</div>
+                                <span>SL: 1</span>
+                            </div>
+                            <div className="ccs-cart-price">211.500 đ</div>
+                        </div>
+                    );
+                }) : null)
+            );
         } else {
             return (
                 <div></div>

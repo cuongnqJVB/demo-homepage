@@ -1,7 +1,14 @@
 .coco-selectbox-wrap {
     .form-control {
-      width: unset !important;
-      height: unset !important;
+        // width: unset;
+        height: unset;
     }
-  }
-  
+}
+
+.ccs-selectbox {
+    > select {
+        width: 100%;
+        border: 1px solid #bebebe;
+        padding: 15px 24px;
+    }
+}

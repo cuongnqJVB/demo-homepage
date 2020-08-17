@@ -3,6 +3,8 @@
     background: #fff;
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 5px;
+    margin-bottom: 0;
+    font-size: 16px;
     > thead {
         min-height: 56px;
         background: #e5e4e4;
@@ -13,6 +15,8 @@
                 border: none;
                 padding: 17px 24px;
                 text-align: center;
+                font-family: NunitoSansRegular;
+                line-height: 21px;
                 &:nth-last-child(5) {
                     text-align: unset;
                 }
@@ -27,15 +31,59 @@
                 border: none;
                 padding: 0;
                 vertical-align: unset;
-                padding: 0 16px;
+                padding: 24px 16px 16px 16px;
                 text-align: center;
+                &:nth-last-child(1) {
+                    cursor: pointer;
+                    font-family: NunitoSansBold;
+                }
+                &:nth-last-child(2) {
+                    font-family: NunitoSansBold;
+                }
                 &:nth-last-child(5) {
                     text-align: unset;
                 }
             }
             .td-item-product {
+                padding-left: 40px;
+                width: 40%;
             }
             .td-item-price {
+                text-align: left /*  */;
+                > span {
+                    &:nth-last-child(1) {
+                        font-family: NunitoSansBold;
+                        font-size: 16px;
+                        line-height: 21px;
+                        color: #000000;
+                        padding-left: 16px;
+                    }
+                    &:nth-last-child(2) {
+                        font-family: NunitoSansBold;
+                        font-size: 16px;
+                        line-height: 21px;
+                        color: #bebebe;
+                        text-decoration: line-through;
+                    }
+                }
+            }
+        }
+    }
+    .ccs-cart-table--footer {
+        > td {
+            width: 100%;
+            padding: 26px 40px;
+            text-align: left;
+            > img {
+                width: 40px;
+                -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
+            }
+            > span {
+                padding-left: 16px;
+                font-family: NunitoSansRegular;
+                font-size: 16px;
+                line-height: 21px;
             }
         }
     }

@@ -158,6 +158,17 @@
         }
     }
 }
+.ccs-btn-gg-white {
+    > button {
+        padding: 0 47px;
+        background: #4688F1;
+        > a {
+            > span {
+                color: #fff;
+            }
+        }
+    }
+}
 /*---end: Button login---*/
 
 /*---begin: Button danger---*/

@@ -31,7 +31,7 @@ export default ({
 }) => {
     return (
         <div className={`coco-selectbox-wrap ${className}`}>
-            <Form.Control as="select">
+            <Form.Control as="select" name={name}>
                 <option>{option}</option>
             </Form.Control>
         </div>

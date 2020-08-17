@@ -35,7 +35,7 @@
         height: 10px;
         display: block;
         position: absolute;
-        top: calc(50% - 5px);
+        top: calc(50% - 5px) !important;
         left: 3px;
         // padding: 5px;
         //  background:#009966;
@@ -45,6 +45,24 @@
     .ccs-radio-custom:checked + .ccs-radio-custom-label:before {
         -webkit-transition: all 0.3s ease;
         transition: all 0.3s ease;
+    }
+}
 
+.ccs-radio-disable {
+    .ccs-radio-btn {
+    }
+    .ccs-radio-custom-label {
+        color: #bebebe;
+    }
+    .ccs-radio-custom:checked + .ccs-radio-custom-label:after {
+        background: #e5e4e4;
+    }
+}
+
+.ccs-radio-align-items {
+    .ccs-radio-custom-label {
+        &::after {
+            top: 0 !important;
+        }
     }
 }

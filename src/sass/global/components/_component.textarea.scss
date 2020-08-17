@@ -1,0 +1,19 @@
+.ccs-textarea-cpn {
+    > textarea {
+        width: 100%;
+        &:focus{
+            outline: none;
+        }
+    }
+}
+
+.ccs-textarea-form {
+    > textarea {
+        border: 1px solid #bebebe;
+        border-radius: 5px;
+        background: #ffffff;
+        font-size: 16px;
+        line-height: 21px;
+        padding: 26px 24px;
+    }
+}

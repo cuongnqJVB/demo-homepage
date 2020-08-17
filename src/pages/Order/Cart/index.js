@@ -4,7 +4,6 @@ import Card from "../../../components/Cards";
 import Tables from "../../../components/Tables";
 import Item from "../../../components/Items";
 import Input from "../../../components/Input";
-import CardsDetailByCategories from "../../../components/Cards/CardsDetailByCategories";
 import "./style.scss";
 
 const Cart = () => {
@@ -23,7 +22,22 @@ const Cart = () => {
                     className="cart-input-qty"
                 />,
             cash: "211.500 đ",
-            action: "<a>XÓA</a>"
+            action: "<a>Xoá</a>"
+        },
+        {
+            product:
+                <Item
+                    type={6}
+                    data={["1"]}
+                />,
+            price: "211.500 đ",
+            quantity:
+                <Input
+                    type="number"
+                    className="cart-input-qty"
+                />,
+            cash: "211.500 đ",
+            action: "<a>Xoá</a>"
         }
     ];
     const arr2 = ["1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1"];
@@ -34,11 +48,11 @@ const Cart = () => {
     return (
         <div className="coco-cart-wrap">
             <div className="coco-cart-title">Giỏ hàng(1 sản phẩm)</div>
-            {/* List products */}
             <Tables
                 columns={columns}
                 rows={rows}
                 mode="custom"
+                marginTop="15px"
             />
             <div className="coco-cart-confirm">
                 <div className="cart-confirm--label">
