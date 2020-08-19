@@ -7,6 +7,7 @@ import Input from "../../../components/Input";
 import Radio from "../../../components/Radio";
 import SelectBox from "../../../components/SelectBox";
 import Textarea from "../../../components/Textarea";
+import InputGroup from 'react-bootstrap/InputGroup';
 import "./style.scss";
 
 const OrderProcessing = () => {
@@ -205,10 +206,11 @@ const OrderProcessing = () => {
                                 id="option3"
                                 name="radioPayment"
                                 className={`option_item_radio3 ${classActive}`}
-                                onClick={() => {
-                                    setClassActive("ccs-radio-align-items");
-                                }}
                             />
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" name="customRadio" id="customRadio2" checked />
+                            <label class="custom-control-label" for="customRadio2">Another custom radio</label>
                         </div>
                     </div>
                 </div>
