@@ -181,7 +181,10 @@ const OrderProcessing = () => {
                         </div>
                         <div className='deliver--option_item'>
                             <Radio text="[NowFree] Giao hàng nhanh trong 2 giờ: 9,000 đ" className="ccs-radio-disable" id="2h" name="radioDeliver" />
-                            <span className="option_item__warning">Đơn hàng không đủ điều kiện giao nhanh 2 giờ (Xem thêm)</span>
+                            <span className="option_item__warning">
+                                Đơn hàng không đủ điều kiện giao nhanh 2 giờ
+                                <a href="#"> (Xem thêm)</a>
+                            </span>
                         </div>
                     </div>
 
@@ -197,20 +200,18 @@ const OrderProcessing = () => {
                             <Radio
                                 text="Thẻ ATM nội địa (Internet Banking, VNPAY-QR, Ví VnMart - Miễn phí thanh toán)"
                                 id="option2"
-                                name="radioPayment" />
-                            <a> (Xem thêm)</a>
+                                name="radioPayment"
+                                className="rd-mr-0"
+                            />
+                            <a href="#"> (Xem thêm)</a>
                         </div>
                         <div className='deliver--option_item'>
                             <Radio
                                 text={label}
                                 id="option3"
                                 name="radioPayment"
-                                className={`option_item_radio3 ${classActive}`}
+                                className="option_item_radio3"
                             />
-                        </div>
-                        <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" class="custom-control-input" name="customRadio" id="customRadio2" checked />
-                            <label class="custom-control-label" for="customRadio2">Another custom radio</label>
                         </div>
                     </div>
                 </div>

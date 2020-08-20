@@ -271,8 +271,15 @@
                 }
                 .deliver--option_item {
                     margin-top: 15px;
+                    color: #000000;
                     &:nth-last-child(1) {
                         margin-top: 19px;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    > a {
+                        text-decoration: none;
+                        color: #000000;
                     }
                     .option_item_radio3 {
                         .custom-control-label {
@@ -286,6 +293,10 @@
                         line-height: 21px;
                         color: #c73030;
                         padding-left: 26px;
+                        > a {
+                            text-decoration: none;
+                            color: #c73030;
+                        }
                     }
                 }
             }
