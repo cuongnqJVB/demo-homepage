@@ -6,7 +6,92 @@
         flex-wrap: wrap;
         justify-content: space-between;
         padding-bottom: 44px;
-        .ccs-order-info {
+        .ccs-order-info-islogin {
+            width: 65%;
+            max-width: 1080px;
+            background: #ffffff;
+            .order-info--title {
+                display: flex;
+                justify-content: space-between;
+                padding: 15px 24px 16px 24px;
+                font-size: 24px;
+                line-height: 33px;
+                border-bottom: 1px solid #e5e4e4;
+                color: #000000;
+                > span {
+                    > a {
+                        font-family: NunitoSansSemiBold;
+                        text-decoration: none;
+                        color: #000000;
+                        cursor: pointer;
+                    }
+                    > img {
+                        padding-right: 7px;
+                    }
+                }
+                &:nth-last-child(2) {
+                    font-family: NunitoSansBold;
+                }
+            }
+            .ccs-order--form {
+                padding: 16px 24px 24px 24px;
+                .order--form_address {
+                    display: flex;
+                    border-bottom: 1px solid #e5e4e4;
+                }
+                .order--form_group {
+                    > span {
+                        font-family: NunitoSansSemiBold;
+                        font-size: 16px;
+                        line-height: 21px;
+                    }
+                    .from_group__detail {
+                        display: flex;
+                        flex-direction: column;
+                        color: #000000;
+                        padding-bottom: 16px;
+                        > div {
+                            font-family: NunitoSansSemiBold;
+                            font-size: 16px;
+                            line-height: 21px;
+                            text-transform: uppercase;
+                        }
+                        > span {
+                            font-family: NunitoSansRegular;
+                            font-size: 14px;
+                            line-height: 24px;
+                            &:nth-last-child(2) {
+                                margin-top: 16px;
+                            }
+                        }
+                    }
+                    .ccs-input-cpn {
+                        > input {
+                            font-family: NunitoSansSemiBold;
+                            font-size: 16px;
+                            line-height: 21px;
+                        }
+                    }
+                    .coco-selectbox-wrap {
+                        > select {
+                            margin-top: 8px;
+                            font-family: NunitoSansSemiBold;
+                            font-size: 16px;
+                            line-height: 21px;
+                        }
+                    }
+                    .ccs-textarea-cpn {
+                        > textarea {
+                            margin-top: 8px;
+                        }
+                    }
+                }
+                .order--form_note {
+                    margin-top: 27px;
+                }
+            }
+        }
+        .ccs-order-info-unlogin {
             width: 65%;
             max-width: 1080px;
             background: #ffffff;

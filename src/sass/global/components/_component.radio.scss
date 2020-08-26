@@ -10,7 +10,9 @@
             // -webkit-box-shadow: 0 0 0 0.1rem #f3f3f3;
         }
     }
-
+    .custom-control-input {
+        height: 1rem;
+    }
     .custom-control-label {
         &:before {
             border-color: #e5e4e4 !important;
@@ -40,6 +42,6 @@
     }
 }
 
-.rd-mr-0{
+.rd-mr-0 {
     margin-right: 0;
 }

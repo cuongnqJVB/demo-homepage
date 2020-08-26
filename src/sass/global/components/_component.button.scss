@@ -9,7 +9,7 @@
         border: 0.5px solid #c73030;
         border-radius: 22px;
         cursor: pointer;
-        &:focus{
+        &:focus {
             outline: none;
         }
         > a {
@@ -161,7 +161,7 @@
 .ccs-btn-gg-white {
     > button {
         padding: 0 47px;
-        background: #4688F1;
+        background: #4688f1;
         > a {
             > span {
                 color: #fff;
@@ -199,9 +199,47 @@
 }
 /*---end: Button danger---*/
 
+/*---begin: Button black---*/
+.ccs-btn-black {
+    > button {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        padding: 0 22px;
+        outline: none;
+        border: 1px solid #000000;
+        background: #ffffff;
+        box-shadow: 0px 3px 6px #7c707029;
+        -moz-box-shadow: 0px 3px 6px #00000029;
+        -webkit-box-shadow: 0px 3px 6px #00000029;
+        border-radius: 5px;
+        > a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            > img {
+                width: 1rem;
+            }
+            > span {
+                padding-left: 8px;
+                font-family: NunitoSansSemiBold;
+                font-size: 16px;
+                line-height: 21px;
+                text-align: center;
+                color: #000000;
+            }
+        }
+    }
+}
+/*---end: Button black---*/
+
 /*---Custome some css attributes---*/
 .ccs-text-uppercase {
     > button {
         text-transform: uppercase;
     }
+}
+.mt-16 {
+    margin-top: 1rem;
 }
