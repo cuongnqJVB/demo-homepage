@@ -29,11 +29,12 @@
 }
 /*------end: MAIN HEADER------*/
 
-/*------begin: TOP HEADER------*/
+/*------begin: HEADER TOP------*/
 .top-header-wrap {
     max-width: 1648px;
     margin: 0 auto;
     padding: 7px 0px;
+    background: #000000;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -99,7 +100,123 @@
         }
     }
 }
-/*------end: TOP HEADER------*/
+/*------end HEADER TOP------*/
+
+/*------begin: HEADER CENTER------*/
+.header-center-wrap {
+    width: 100%;
+    background: #f3f3f3;
+    > div {
+        max-width: 1648px;
+        margin: 0 auto;
+        padding: 24px 0px;
+        background: #f3f3f3;
+        display: flex;
+        justify-content: space-between;
+        .header-center-logo {
+            position: relative;
+            z-index: 5;
+            > a {
+                display: inline-block;
+                img {
+                    width: 88px;
+                }
+            }
+        }
+        .header-center-searchbox {
+            min-width: 669px;
+            height: 45px;
+            padding: 0 24px;
+            background: #ffffff;
+            border-color: transparent;
+            outline: none;
+            box-shadow: 0px 3px 3px #0000001a;
+            -moz-box-shadow: 0px 3px 6px #0000001a;
+            -webkit-box-shadow: 0px 3px 6px #0000001a;
+            border-radius: 5px;
+        }
+        .header-ceneter-account {
+            position: relative;
+            display: flex;
+            align-items: center;
+            > img {
+                padding-right: 8px;
+            }
+            > div {
+                > a {
+                    font-family: NunitoSansRegular;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: #000000;
+                    text-decoration: none;
+                }
+                > span {
+                    font-family: NunitoSansRegular;
+                    font-size: 16px;
+                    line-height: 21px;
+                    color: #000000;
+                }
+            }
+        }
+        .header-center-item {
+            display: flex;
+            justify-content: space-between;
+            > img {
+                padding-right: 32px;
+            }
+            .center-item--button {
+                > button {
+                    cursor: pointer;
+                    padding: 11px 21px;
+                    background: transparent;
+                    outline: none;
+                    border: 1px solid #000000;
+                    border-radius: 5px;
+                    transition: all ease 0.3s;
+                    > a {
+                        text-decoration: none;
+                        display: flex;
+                        align-items: center;
+                        > img {
+                            padding-right: 7px;
+                        }
+                        span {
+                            transition: all ease 0.3s;
+                            font-family: NunitoSansRegular;
+                            font-size: 18px;
+                            line-height: 24px;
+                            display: inline-block;
+                            color: #000000;
+                            letter-spacing: -0.64px;
+                            &:nth-last-child(2) {
+                                padding-right: 6px;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        background: #fff;
+                        span {
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*------end: HEADER CENTER------*/
+
+/*------begin: HEADER BOTTOM------*/
+.header-bottom-wrap {
+    max-width: 1648px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*------end: HEADER BOTTOM------*/
 
 /*------begin: ACCOUNT------*/
 .account-wrap {
@@ -285,4 +402,5 @@
         }
     }
 }
+
 /*------end: CARDHEADER------*/

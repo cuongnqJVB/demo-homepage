@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import LogoCoco from "./Logo";
 import SearchBox from "../Search";
 import Account from "./Account";
 import Cart from "./Cart";
-import TopHeader from "./TopHeader";
+import HeaderTop from "./header-top";
+import HeaderCenter from "./header-center";
+import HeaderBottom from "./header-bottom";
 import "../../sass/global/components/_component.header.scss";
 
 const WrapHeader = styled.div`
@@ -13,23 +15,14 @@ const WrapHeader = styled.div`
 `;
 
 const Header = () => {
+    let [overFlow, setOverFlow] = useState(null);
+    let [activeMenu, setActiveMenu] = useState(null);
+
     return (
         <div className="coco-layout-wrap-main-dad_header">
-            <TopHeader />
-            <WrapHeader>
-                <div className="coco-layout-wrap-main-child_header">
-                    <LogoCoco />
-                    <SearchBox
-                        classname_input="coco-layout-wrap-main-child-header-search_field"
-                        placeholder="Tìm sản phẩm, thương hiệu bạn mong muốn..."
-                    />
-                    <Account />
-                    <div className="coco-layout-wrap-main-child-header-list_item">
-                        <img src="./Images/ic-like.svg" alt="" />
-                        <Cart text="Giỏ hàng" total="1" />
-                    </div>
-                </div>
-            </WrapHeader>
+            <HeaderTop />
+            <HeaderCenter />
+            <HeaderBottom setOverFlow={setOverFlow} setActiveMenu={activeMenu} />
         </div>
     );
 };
