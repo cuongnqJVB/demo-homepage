@@ -317,7 +317,7 @@
 .ccs-cart-item-order {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     .ccs-cart-thumb {
         max-width: 128px;
         min-width: 128px;
