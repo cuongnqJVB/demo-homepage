@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../../components/Buttons";
 import Input from "../../components/Input";
 import Checkbox from "../../components/Checkbox";
@@ -6,6 +6,7 @@ import SelectBox from "../../components/SelectBox";
 import Textarea from "../../components/Textarea";
 
 const OrderProcessing = (props) => {
+    let [hidden, setHidden] = useState(null);
     const { isLogin } = props;
     if (isLogin) {
         return (
@@ -17,7 +18,7 @@ const OrderProcessing = (props) => {
                         Bạn đã đăng nhập
                     </span>
                 </div>
-                <div className="ccs-order--form">
+                <div className={`ccs-order--form ${hidden}`}>
                     <div className="order--form_group order--form_address">
                         <Checkbox id="1" name="cbAddress" className="c-checkbox--normal" />
                         <div className="from_group__detail">
@@ -31,6 +32,9 @@ const OrderProcessing = (props) => {
                         text="Thêm địa chỉ khác"
                         type="submit"
                         className="ccs-btn ccs-btn-black mt-16"
+                        onClick={() => {
+                            setHidden('abcd');
+                        }}
                     />
                     <div className="order--form_group order--form_note">
                         <span>Ghi chú</span>
