@@ -16,38 +16,38 @@ const CardHeader = (props) => {
     if (type === "header") {
         return (
             <div className={`ccs-card-header ${borderBottom ? "ccs-card-header-line" : null}`}>
-                <div className="ccs-card-left">
+                <div className="ccs-card-header--left">
                     <div
-                        className="card-left--logo"
+                        className="ccs-card-header--left__logo"
                         style={{ display: logoHeader ? "" : "none" }}
                     >
                         <img src={logoHeader} alt="" />
                     </div>
-                    <div className="card-left--title">{titleHeader}</div>
+                    <div className="ccs-card-header--left__title">{titleHeader}</div>
                     <div
-                        className="card-left--time"
+                        className="ccs-card-header--left__time"
                         style={{ display: displayTimeBox ? "" : "none" }}
                     >
-                        <div className="left-time_child">
+                        <div>
                             <span>02</span>
                         </div>
-                        <div className="left-time_child">
+                        <div>
                             <span>50</span>
                         </div>
-                        <div className="left-time_child">
+                        <div>
                             <span>35</span>
                         </div>
                     </div>
                 </div>
-                <div className="ccs-card-right">
+                <div className="ccs-card-header--right">
                     <span>{btnExternal ? btnExternal : "Xem Tất Cả"}</span>
                 </div>
             </div>
         );
     } else if (type === "tab") {
         return (
-            <div className="ccs-card-tab">
-                <div className="ccs-card-item">
+            <div className="ccs-card-header-tab">
+                <div className="ccs-card-header-tab--item">
                     {data.map((item, index) => {
                         return (
                             <div key={index}>
@@ -56,14 +56,14 @@ const CardHeader = (props) => {
                         );
                     })}
                 </div>
-                <div className="ccs-card-item">XEM THÊM</div>
+                <div className="ccs-card-header-tab--item">XEM THÊM</div>
             </div>
         );
     } else if (type === "poster") {
         return (
-            <div className="ccs-card-poster">
-                <div className="ccs-card-left--header">{posterTitle}</div>
-                <div className="ccs-card-left--poster">
+            <div className="ccs-card-header-poster">
+                <div className="ccs-card-header-poster--header">{posterTitle}</div>
+                <div className="ccs-card-header-poster--image">
                     <img src={posterImg} alt="" />
                 </div>
             </div>

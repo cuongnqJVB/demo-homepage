@@ -16,7 +16,7 @@ const Navbar = (props) => {
             <Button text="Tên sản phẩm" className="ccs-btn-nav" />
             <SelectBox
                 option="Giá sản phẩm"
-                class_selectbox="navbar_left__selectbox"
+                class_selectbox="navbar-select-price"
             />
         </div>
     );

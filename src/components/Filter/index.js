@@ -11,24 +11,24 @@ const Filter = (props) => {
     }, []);
     return (
         <div className="coco-filter-wrap" style={{ marginTop: marginTop }}>
-            <div className="coco-filter--button">
+            <div className="coco-filter-wrap--button">
                 <img src="./Images/ic-filter-black.svg" alt="" />
                 <span>Bộ lọc tìm kiếm</span>
             </div>
             {listItem.map((item, index) => {
                 return (
-                    <div className="coco-filter--list_item">
-                        <div className="filter--list_item__header">
+                    <div className="coco-filter-wrap--item">
+                        <div className="coco-filter-wrap--item__header">
                             Trang điểm
                         <span style={{ display: totalItem ? "" : "none" }}>
                                 ({totalItem})
                         </span>
                         </div>
-                        <div className="filter--list_item__expand">
-                            <div className="item_expand__root  item_expand__active">
+                        <div className="coco-filter-wrap--item__expand">
+                            <div className="item__expand__root item__expand__active">
                                 Trang điểm mặt
                             </div>
-                            <div className="item_expand__child">
+                            <div className="item__expand__child">
                                 <span>Kem Nền</span>
                                 <span>Kem Lót</span>
                                 <span>Che Khuyết Điểm</span>
@@ -39,10 +39,10 @@ const Filter = (props) => {
                                 <span>Tạo Khối - Highlighter</span>
                                 <span>Tạo Khối - Highlighter</span>
                             </div>
-                            <div className="item_expand__root">Trang Điểm Môi</div>
-                            <div className="item_expand__root">Tẩy Trang Mắt - Môi</div>
-                            <div className="item_expand__root">Chăm Sóc Móng</div>
-                            <div className="item_expand__root"> Dụng Cụ Trang Điểm</div>
+                            <div className="item__expand__root">Trang Điểm Môi</div>
+                            <div className="item__expand__root">Tẩy Trang Mắt - Môi</div>
+                            <div className="item__expand__root">Chăm Sóc Móng</div>
+                            <div className="item__expand__root"> Dụng Cụ Trang Điểm</div>
                         </div>
                     </div>
                 );

@@ -1,5 +1,8 @@
 .ccs-banner-wrap {
-    .ccs-banner--item1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    &--left {
         > img {
             width: 55rem;
             object-fit: cover;
@@ -9,7 +12,7 @@
             -webkit-box-shadow: 0px 3px 6px #00000029;
         }
     }
-    .ccs-banner--item2 {
+    &--right {
         display: flex;
         flex-direction: column;
         > img {

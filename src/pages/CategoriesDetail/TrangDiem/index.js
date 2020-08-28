@@ -19,7 +19,7 @@ const TrangDiem = () => {
     }, []);
 
     return (
-        <div className="coco-trangdiem-wrap">
+        <div className="coco-search-wrap">
             <BreadCrumb
                 marginTop="13px"
                 firstUrl="SON MÔI"
@@ -27,11 +27,11 @@ const TrangDiem = () => {
                 secondUrl="Son Dưỡng"
                 secondRouter="#"
             />
-            <div className="coco-trangdiem-body">
-                <div className="trangdiem-body--left">
+            <div className="coco-search-wrap--body">
+                <div className="coco-search__left">
                     <Filter marginTop="32px" data={["1", "2", "3"]} />
                 </div>
-                <div className="trangdiem-body--right">
+                <div className="coco-search__right">
                     <CardsDetailByCategories
                         titleCard="Trang Điểm Mặt"
                         marginTop="32px"
@@ -39,7 +39,7 @@ const TrangDiem = () => {
                     />
                 </div>
             </div>
-            <div className="coco-trangdiem-bottom">
+            <div className="coco-search-wrap--bottom">
                 <Card
                     type="horizontal"
                     data={arr2}

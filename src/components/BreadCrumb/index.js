@@ -14,14 +14,14 @@ class BreadCrumb extends Component {
         if (secondUrl) {
             return (
                 <div className="coco-breadcrumb-wrap" style={{ marginTop: marginTop }}>
-                    <Link to="/" className="coco-breadcrumb-home">
+                    <Link to="/" className="coco-breadcrumb-wrap--home">
                         <img src="/Images/ic-home20px.svg" alt="" />
                         <span>Trang chủ</span>
                     </Link>
-                    <a href={firstRouter} className="breadcrumb-home--first">
+                    <a href={firstRouter} className="coco-breadcrumb-wrap--first">
                         {firstUrl}
                     </a>
-                    <a href={secondRouter} className="breadcrumb-home--second">
+                    <a href={secondRouter} className="coco-breadcrumb-wrap--second">
                         {secondUrl}
                     </a>
                 </div>
@@ -29,11 +29,11 @@ class BreadCrumb extends Component {
         } else {
             return (
                 <div className="coco-breadcrumb-wrap" style={{ marginTop: marginTop }}>
-                    <Link to="/" className="coco-breadcrumb-home">
+                    <Link to="/" className="coco-breadcrumb-wrap--home">
                         <img src="/Images/ic-home20px.svg" alt="" />
                         <span>Trang chủ</span>
                     </Link>
-                    <a href={firstRouter} className="breadcrumb-home--first">
+                    <a href={firstRouter} className="coco-breadcrumb-wrap--first">
                         {firstUrl}
                     </a>
                 </div>
