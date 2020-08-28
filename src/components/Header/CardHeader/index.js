@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../sass/global/components/_component.header.scss";
+// import "../../../sass/global/components/_component.header.scss";
 
 const CardHeader = (props) => {
     const {

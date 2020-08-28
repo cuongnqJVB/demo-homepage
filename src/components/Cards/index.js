@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Slider from "../../components/Sliders";
 import Item from "../../components/Items";
 import CardHeader from "../../components/Header/CardHeader";
-import "../../sass/global/components/_component.card.scss";
+import "../../sass/global/components/_component.card2.scss";
 
 class Card extends Component {
     render() {
@@ -25,7 +25,7 @@ class Card extends Component {
         if (type === "horizontal") {
             return (
                 <div
-                    className={`ccs-card-horizontal ${className}`}
+                    className={`ccs-card card-horizontal ${className}`}
                     style={{ marginTop: marginTop }}
                 >
                     <CardHeader
@@ -48,7 +48,7 @@ class Card extends Component {
         } else if (type === "brand") {
             return (
                 <div
-                    className={`ccs-card-brand ${className}`}
+                    className={`ccs-card card-brand ${className}`}
                     style={{ marginTop: marginTop }}
                 >
                     <CardHeader
@@ -71,7 +71,7 @@ class Card extends Component {
         } else if (type === "article") {
             return (
                 <div
-                    className={`ccs-card-article ${className}`}
+                    className={`ccs-card card-article ${className}`}
                     style={{ marginTop: marginTop }}
                 >
                     <CardHeader
@@ -95,26 +95,23 @@ class Card extends Component {
         } else if (type === "vertical") {
             return (
                 <div
-                    className={`
-                    ccs-card-vertical 
-                    ${className}
-                    ${ mode === "reverse" ? "ccs-card-vertical--reverse" : ""}
-                    `}
+                    className={`ccs-card card-vertical 
+                    ${mode === "reverse" ? "ccs-card-vertical--reverse" : ""}`}
                     style={{ marginTop: marginTop }}
                 >
-                    <div className="ccs-card-left">
+                    <div className="ccs-card--left">
                         <CardHeader
                             type="poster"
                             posterTitle={posterTitle}
                             posterImg={posterImg}
                         />
                     </div>
-                    <div className="ccs-card-right">
+                    <div className="ccs-card--right">
                         <CardHeader
                             type="tab"
                             data={lstTab}
                         />
-                        <div className="card-right--content">
+                        <div className="ccs-card__content">
                             <Slider typeSlider={2}>
                                 {data.map((item, index) => {
                                     return (

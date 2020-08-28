@@ -1,0 +1,272 @@
+.ccs-card {
+    width: 100%;
+    background: #ffffff;
+    overflow: hidden;
+
+    //
+    // Modes
+    //
+    &.card-horizontal {
+        max-height: 496px;
+    }
+
+    &.card-vertical {
+        width: 100%;
+        display: flex;
+
+        .ccs-card--left {
+            width: 17%;
+        }
+
+        .ccs-card--right {
+            width: 83%;
+            margin-top: 16px;
+        }
+    }
+
+    &.card-vertical--reverse {
+        flex-direction: row-reverse;
+    }
+
+    &.card-brand {
+        width: 100%;
+        background: #ffffff;
+        height: unset;
+        box-shadow: 0px 3px 6px #00000029;
+        -moz-box-shadow: 0px 3px 6px #00000029;
+        -webkit-box-shadow: 0px 3px 6px #00000029;
+        border-radius: 5px;
+    }
+
+    &.card-article {
+        width: 100%;
+        background: #f3f3f3;
+
+        .ccs-card-content {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 32px;
+        }
+    }
+
+    //
+    // Header
+    //
+    &-header {
+        padding: 24px;
+        background: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &.header-no-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &--left {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &__logo {
+                padding-right: 30px;
+                > img {
+                    height: 32px;
+                }
+            }
+
+            &__title {
+                font-family: NunitoSansBold;
+                font-size: 24px;
+                line-height: 33px;
+                color: #000000;
+                > img {
+                    padding-right: 30px;
+                }
+            }
+
+            &__time {
+                display: flex;
+                justify-content: space-between;
+                > div {
+                    width: 40px;
+                    height: 32px;
+                    margin-right: 16px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #000;
+                    > span {
+                        font-family: NunitoSansRegular;
+                        font-size: 21px;
+                        line-height: 21px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        &--right {
+            > span {
+                cursor: pointer;
+                font-family: NunitoSansRegular;
+                font-size: 16px;
+                line-height: 21px;
+                color: #c73030;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    &-header-line {
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            z-index: 2;
+            width: 20%;
+            border-bottom: 4px solid #c73030;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 100%;
+            border-bottom: 4px solid #e4e4e4;
+        }
+    }
+
+    &-header-tab {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 16px;
+        background: #e5e4e4;
+        border-radius: 0px 5px 0px 0px;
+        &--item {
+            display: flex;
+            text-transform: uppercase;
+            > div {
+                cursor: pointer;
+                padding: 0 32px;
+                font-family: NunitoSansRegular;
+                font-size: 18px;
+                line-height: 24px;
+                text-transform: uppercase;
+                color: #000000;
+            }
+        }
+    }
+
+    &-header-poster {
+        &--header {
+            padding: 23px 28px 16px 28px;
+            font-family: NunitoSansBold;
+            font-size: 24px;
+            line-height: 33px;
+            color: #ffffff;
+            border-radius: 0px 16px 0px 0px;
+            background: #272727;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+        &--poster {
+            > img {
+                max-width: 17.5rem;
+            }
+        }
+    }
+
+    &-header-categories {
+        width: 100%;
+        background: #e5e4e4;
+        box-shadow: 0px 3px 6px #00000029;
+        -moz-box-shadow: 0px 3px 6px #00000029;
+        -webkit-box-shadow: 0px 3px 6px #00000029;
+        border-radius: 5px;
+    }
+
+    &-header-flex {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+//
+// CardDetailByCategories
+//
+.card-list-item {
+    &--header {
+        font-family: NunitoSansBold;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: left;
+        color: #000000;
+        text-transform: uppercase;
+    }
+    &--content {
+        margin-top: 23px;
+
+        .header-navbar {
+            width: 100%;
+            background: #e5e4e4;
+            box-shadow: 0px 3px 6px #00000029;
+            -moz-box-shadow: 0px 3px 6px #00000029;
+            -webkit-box-shadow: 0px 3px 6px #00000029;
+            border-radius: 5px;
+        }
+
+        .coco-navbar {
+            &.nav-flex {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &.nav-padding {
+                padding: 16px 24px;
+            }
+
+            &.nav-flex-right {
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            .nav-flex-left {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .ccs-navbar--left {
+                width: 75%;
+                > span {
+                    width: 12%;
+                    position: sticky;
+                    font-family: NunitoSansSemiBold;
+                    font-size: 16px;
+                    line-height: 21px;
+                    color: #000000;
+                }
+            }
+
+            .ccs-navbar--right {
+                width: 15%;
+            }
+        }
+
+        .coco-list-item {
+            display: flex;
+            flex-wrap: wrap;
+            // justify-content: center;
+            background: #ffffff;
+            overflow: hidden;
+        }
+    }
+}

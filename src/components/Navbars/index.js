@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Button from "../../components/Buttons";
 import SelectBox from "../../components/SelectBox";
 // import PaginationTop from "./PaginationTop";
-import "../../sass/global/components/_component.navbar.scss";
+// import "../../sass/global/components/_component.navbar.scss";
 
 const Navbar = (props) => {
     const { width } = props;

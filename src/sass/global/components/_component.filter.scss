@@ -1,5 +1,5 @@
-.coco-filter-wrap {
-    &--button {
+.coco-filter-wrapper {
+    &--toggle {
         display: flex;
         align-items: center;
         > img {
@@ -14,40 +14,49 @@
             text-transform: uppercase;
         }
     }
-    &--item {
-        &__header {
-            margin-top: 23px;
-            font-family: NunitoSansBold;
-            font-size: 18px;
-            line-height: 25px;
-            text-align: left;
-            color: #000000;
-            text-transform: uppercase;
-        }
-        &__expand {
-            .item__expand__root {
-                margin-top: 15px;
-                font-family: NunitoSansSemiBold;
+    &--collapse {
+        .list-group {
+            .list-group-title {
+                margin-top: 23px;
+                font-family: NunitoSansBold;
                 font-size: 18px;
                 line-height: 25px;
                 text-align: left;
-            }
-            .item__expand__active {
-                color: #c73030;
-            }
-            .item__expand__child {
-                display: flex;
-                flex-direction: column;
-                max-height: 242px;
-                margin-top: 16px;
-                padding-left: 20px;
-                font-family: NunitoSansRegular;
-                font-size: 18px;
-                line-height: 35px;
-                text-align: left;
                 color: #000000;
-                cursor: pointer;
-                overflow-y: auto;
+                text-transform: uppercase;
+            }
+            .list-group-items {
+                .item-group {
+                    margin-top: 15px;
+                    .item-group-title {
+                        font-family: NunitoSansSemiBold;
+                        font-size: 18px;
+                        line-height: 25px;
+                        text-align: left;
+                    }
+                    .item-group-child {
+                        display: flex;
+                        flex-direction: column;
+                        max-height: 242px;
+                        margin-top: 16px;
+                        padding-left: 20px;
+                        font-family: NunitoSansRegular;
+                        font-size: 18px;
+                        line-height: 35px;
+                        text-align: left;
+                        color: #000000;
+                        cursor: pointer;
+                        overflow-y: auto;
+                    }
+                }
+                .item__expand {
+                    .item-group-title {
+                        color: #c73030;
+                    }
+                    .item-group-child {
+                        visibility: hidden;
+                    }
+                }
             }
         }
     }
