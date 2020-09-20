@@ -1,0 +1,256 @@
+.admin-page-container {
+  width: 100%;
+}
+.admin-page-container .navbar {
+  min-height: 70px;
+  background: #28a745;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.admin-page-container .navbar .nav-logo > span {
+  font-weight: bold;
+  font-size: 22px;
+  color: #fff;
+}
+.admin-page-container .navbar .nav-manage-box {
+  display: flex;
+  align-items: center;
+}
+.admin-page-container .navbar .nav-manage-box > i {
+  padding-right: 2rem;
+}
+.admin-page-container .navbar .nav-manage-box > i::before {
+  color: #fff;
+}
+.admin-page-container .navbar .nav-manage-box .user-info {
+  display: flex;
+  align-items: center;
+}
+.admin-page-container .navbar .nav-manage-box .user-info .member-avatar {
+  max-width: 50px;
+  max-height: 50px;
+}
+.admin-page-container .navbar .nav-manage-box .user-info .member-avatar > img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.admin-page-container .navbar .nav-manage-box .user-info .dropdown {
+  padding-left: 1rem;
+}
+.admin-page-container .navbar .nav-manage-box .user-info .dropdown:hover,
+.admin-page-container .navbar .nav-manage-box .user-info .dropdown :focus {
+  border: none;
+  box-shadow: none;
+}
+.admin-page-container .navbar .nav-manage-box .user-info .dropdown .btn {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  text-decoration: none;
+}
+.admin-page-container .navbar .nav-manage-box .user-info .dropdown .btn:hover,
+.admin-page-container .navbar .nav-manage-box .user-info .dropdown .btn :focus {
+  border: none;
+  box-shadow: none;
+}
+.admin-page-container .navbar .nav-manage-box .user-info .dropdown .btn .detail-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  padding-right: 20px;
+}
+.admin-page-container .navbar .nav-manage-box .user-info .dropdown .btn .detail-info > span {
+  font-size: 14px;
+  font-weight: normal;
+}
+.admin-page-container .admin-body-wrapper {
+  min-height: calc(100vh - 70px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.admin-page-container .admin-body-wrapper .admin-menu {
+  width: 15%;
+  background: #28a745bf;
+}
+.admin-page-container .admin-body-wrapper .admin-menu .menu-group {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.admin-page-container .admin-body-wrapper .admin-menu .menu-group .menu-item {
+  margin-top: 1rem;
+  position: relative;
+  padding: 12px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  background: transparent;
+}
+.admin-page-container .admin-body-wrapper .admin-menu .menu-group .menu-item:hover {
+  background: #2727275e;
+}
+.admin-page-container .admin-body-wrapper .admin-menu .menu-group .menu-item:hover::before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  background: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.admin-page-container .admin-body-wrapper .admin-menu .menu-group .menu-item > a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.admin-page-container .admin-body-wrapper .admin-menu .menu-group .menu-item > a > i {
+  padding-right: 7px;
+}
+.admin-page-container .admin-body-wrapper .admin-menu .menu-group .sub-menu {
+  display: none;
+  transition: all ease 0.3s;
+}
+.admin-page-container .admin-body-wrapper .admin-menu .menu-group .sub-menu .list-items {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+}
+.admin-page-container .admin-body-wrapper .admin-menu .menu-group .sub-menu .list-items > a {
+  padding: 8px 30px;
+  margin-top: 5px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.admin-page-container .admin-body-wrapper .admin-menu .menu-group .sub-menu .list-items > a:hover {
+  color: #75e28f;
+  background: #2727275e;
+}
+.admin-page-container .admin-body-wrapper .admin-menu .menu-group .active {
+  display: block;
+}
+.admin-page-container .admin-body-wrapper .admin-container {
+  width: 85%;
+  background: #e5e4e4;
+  padding: 16px;
+}
+.admin-page-container .admin-body-wrapper .admin-container .nav-group {
+  display: flex;
+  justify-content: flex-start;
+}
+.admin-page-container .admin-body-wrapper .admin-container .nav-group .nav {
+  background: #ffffff;
+  border-radius: 5px;
+}
+.admin-page-container .admin-body-wrapper .admin-container .nav-group .nav .nav-item {
+  padding: 0 16px;
+  background: transparent;
+}
+.admin-page-container .admin-body-wrapper .admin-container .nav-group .nav .nav-item > a {
+  background: none;
+  border: none;
+  color: #000;
+  padding: 0.75rem 1rem;
+  font-size: 18px;
+  text-decoration: none;
+}
+.admin-page-container .admin-body-wrapper .admin-container .nav-group .nav .nav-item > a:hover {
+  border-color: none;
+}
+.admin-page-container .admin-body-wrapper .admin-container .nav-group .nav .nav-item .active {
+  font-weight: bold;
+  border-bottom: 2px solid #28a745bf;
+}
+.admin-page-container .admin-body-wrapper .admin-container .navigation-box {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.admin-page-container .admin-body-wrapper .admin-container .navigation-box .navigation-box-left {
+  display: flex;
+}
+.admin-page-container .admin-body-wrapper .admin-container .navigation-box .navigation-box-left .box-left-title {
+  padding-left: 1rem;
+  margin-bottom: 0;
+}
+.admin-page-container .admin-body-wrapper .admin-container .navigation-box .navigation-box-left .btn-success {
+  margin-left: 2rem;
+}
+.admin-page-container .admin-body-wrapper .admin-container .navigation-box .navigation-box-right {
+  width: 18%;
+}
+.admin-page-container .admin-body-wrapper .admin-container .navigation-box .navigation-box-right .input-group > i {
+  position: absolute;
+  z-index: 5;
+  top: 10px;
+  left: 10px;
+}
+.admin-page-container .admin-body-wrapper .admin-container .navigation-box .navigation-box-right .input-group > input {
+  position: relative;
+  padding: 0.375rem 2rem;
+  border-radius: 5px;
+}
+.admin-page-container .admin-body-wrapper .admin-container .admin-table {
+  margin-top: 1rem;
+  background: #ffffff;
+  box-shadow: 0px 3px 6px #00000029;
+  -moz-box-shadow: 0px 3px 6px #00000029;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+}
+.admin-page-container .admin-body-wrapper .admin-container .admin-table > thead > tr > th {
+  color: #6c757d;
+  font-size: 1rem;
+}
+.admin-page-container .admin-body-wrapper .admin-container .admin-table > tbody > tr > td {
+  vertical-align: middle;
+}
+.admin-page-container .admin-body-wrapper .admin-container .admin-table > tbody > tr > td .member-avatar {
+  max-width: 50px;
+  max-height: 50px;
+}
+.admin-page-container .admin-body-wrapper .admin-container .admin-table > tbody > tr > td .member-avatar > img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.admin-page-container .admin-body-wrapper .admin-container .admin-table > tbody > tr > td .member-info {
+  color: #707070;
+  font-size: 14px;
+}
+.admin-page-container .admin-body-wrapper .admin-container .admin-table > tbody > tr > td .member-status {
+  width: 50%;
+  border-radius: 20px;
+  text-align: center;
+}
+.admin-page-container .admin-body-wrapper .admin-container .admin-table > tbody > tr > td .member-status > span {
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+.admin-page-container .admin-body-wrapper .admin-container .admin-table > tbody > tr > td .status-active {
+  background: #75e28f;
+}
+.admin-page-container .admin-body-wrapper .admin-container .admin-table > tbody > tr > td .status-active > span {
+  color: #218838;
+}
+.admin-page-container .admin-body-wrapper .admin-container .admin-table > tbody > tr > td .status-inactive {
+  background: #c8233345;
+}
+.admin-page-container .admin-body-wrapper .admin-container .admin-table > tbody > tr > td .status-inactive > span {
+  color: #dc3545;
+}
+.admin-page-container .admin-body-wrapper .admin-container .admin-table > tbody > tr > td .btn-dark {
+  padding: 0 0.75rem;
+}
+.admin-page-container .admin-body-wrapper .admin-container .admin-table > tbody > tr > td .list-operations > a > i::before {
+  font-size: 1rem;
+}
