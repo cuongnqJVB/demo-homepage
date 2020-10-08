@@ -4,7 +4,7 @@ import Input from "../../components/Input";
 import Radio from "../../components/Radio";
 import Checkbox from "../../components/Checkbox";
 import SelectBox from "../../components/SelectBox";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.scss";
 
 const Login = () => {
