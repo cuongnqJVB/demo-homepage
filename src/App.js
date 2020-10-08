@@ -5,6 +5,7 @@ import HomePage from "./pages/Home";
 import TrangDiem from "./pages/CategoriesDetail/TrangDiem";
 import Login from "./pages/Login";
 import Cart from "./pages/Order/Cart";
+import Admin from "./pages/Admin";
 import OrderProcessing from "./pages/Order/OrderProcessing";
 import Logo from "./pages/Logo";
 import "./App.css";
@@ -15,7 +16,7 @@ class App extends Component {
         return (
             <BrowserRouter>
                 <React.Fragment>
-                    <Layout>
+                    {/* <Layout>
                         <Switch>
                             <Route
                                 path="/"
@@ -27,8 +28,16 @@ class App extends Component {
                             <Route path="/cart" component={Cart} />
                             <Route path="/logo" component={Logo} />
                             <Route path="/order-process" component={OrderProcessing} />
+                            <Route path="/" component={Admin} />
                         </Switch>
-                    </Layout>
+                    </Layout> */}
+                    <Switch>
+                        <Route
+                            path="/"
+                            component={Admin}
+                            exact
+                        />
+                    </Switch>
                 </React.Fragment>
             </BrowserRouter>
         );

@@ -54,7 +54,7 @@
     // Header
     //
     &-header {
-        padding: 24px;
+        padding: 16px 16px;
         background: #ffffff;
         display: flex;
         align-items: center;
@@ -92,8 +92,8 @@
                 display: flex;
                 justify-content: space-between;
                 > div {
-                    width: 40px;
-                    height: 32px;
+                    width: 30px;
+                    height: 25px;
                     margin-right: 16px;
                     display: flex;
                     align-items: center;
@@ -101,8 +101,8 @@
                     background: #000;
                     > span {
                         font-family: NunitoSansRegular;
-                        font-size: 21px;
-                        line-height: 21px;
+                        font-size: 17px;
+                        line-height: 17px;
                         color: #fff;
                     }
                 }
